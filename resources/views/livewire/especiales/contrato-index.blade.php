@@ -27,11 +27,11 @@
                                 <td>{{ $contrato->destino }}</td>
                                 <td>{{ $contrato->nombre }}</td>
                                 <td>{{ $contrato->contratofirmado }}</td>
-                                <td><a target="_blank" href="{{ route('especiales.contratos.pdf') }}"><i class="fas fa-lg fa-file-pdf"></i></a></td>
-                                <td width="10px"><a href="{{ route('especiales.contratos.edit', $contrato) }}"
+                                <td><a target="_blank" href="{{ route('especiales.contratos.pdf',$contrato->contrato_id) }}"><i class="fas fa-lg fa-file-pdf"></i></a></td>
+                                <td width="10px"><a href="{{ route('especiales.contratos.edit', $contrato->contrato_id) }}"
                                         class="btn btn-primary btn-sm">Firmar</a></td>
                                 <td width="10px">
-                                    <form action="{{ route('especiales.contratos.destroy', $contrato) }}" method="POST">
+                                    <form action="{{ route('especiales.contratos.destroy', $contrato->contrato_id) }}" method="POST">
                                         @csrf
                                         @method('delete')
                                         <button type="submit" class="btn btn-danger btn-sm">Anular</button>

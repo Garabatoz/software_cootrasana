@@ -7,6 +7,8 @@ use App\Models\Cliente;
 use Illuminate\Http\Request;
 use App\Models\Contrato;
 use App\Models\Servicio;
+use Barryvdh\DomPDF\Facade\Pdf;
+
 
 class ContratoController extends Controller
 {
@@ -20,9 +22,41 @@ class ContratoController extends Controller
 
         return view('especiales.contratos.index');
     }
-    public function generarContratoPdf()
+    public function generarContratoPdf($contrato)
     {
-        return view('especiales.contratos.pdf');
+
+        $contratoImprimir = Contrato::
+            join('servicios', 'servicios.id', '=', 'contratos.servicio_id')->
+            join('clientes', 'clientes.id', '=', 'contratos.cliente_id')->
+            join('personas', 'personas.id', '=', 'clientes.persona_id')->
+            select(
+                'contratos.id as contrato_id',
+                'contratos.consecutivo',
+                'contratos.origen',
+                'contratos.destino',
+                'contratos.contratofirmado',
+                'contratos.fsalida',
+                'contratos.nrobebes',
+                'contratos.nroniños',
+                'contratos.nroadultos',
+                'contratos.nromayores',
+                'contratos.nroincapac',
+                'contratos.totalpasajeros',
+                'contratos.fregreso',
+                'contratos.fregreso',
+                'contratos.tarifa',
+                'personas.cedula',
+                'personas.nombre',
+                'personas.apellido',
+                'personas.direccion',
+                'servicios.servicio'
+            )->
+            where('contratos.id',$contrato)->first();
+
+        $pdf = PDF::loadView('especiales.contratos.pdf', ['contrato'=>$contratoImprimir]);
+        return $pdf->stream();
+
+        //return view('especiales.contratos.pdf',compact('contratos'));
     }
 
     /**

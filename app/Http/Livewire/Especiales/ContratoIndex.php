@@ -19,12 +19,22 @@ class ContratoIndex extends Component
 
     public function render()
     {
-        $contratos = Contrato::
+
+            $contratos = Contrato::
             join('servicios', 'servicios.id', '=', 'contratos.servicio_id')->
             join('clientes', 'clientes.id', '=', 'contratos.cliente_id')->
             join('personas', 'personas.id', '=', 'clientes.persona_id')->
-            latest('contratos.id')->
+            select(
+                'contratos.id as contrato_id',
+                'contratos.consecutivo',
+                'contratos.origen',
+                'contratos.destino',
+                'contratos.contratofirmado',
+                'personas.nombre',
+                'servicios.servicio'
+            )->
             where('consecutivo','LIKE','%'.$this->search.'%')->
+            latest('contratos.id')->
             paginate(10);
 
             return view('livewire.especiales.contrato-index',compact('contratos'));

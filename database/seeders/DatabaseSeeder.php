@@ -13,6 +13,7 @@ use App\Models\TipoCliente;
 use App\Models\Vehiculo;
 use Database\Factories\PruebaFactory;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Storage;
 
 class DatabaseSeeder extends Seeder
 {
@@ -23,6 +24,8 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+        //Storage::deleteDirectory('pasajeros_contratos');
+        Storage::makeDirectory('pasajeros_contratos');
         $this->call(UserSeeder::class);
         Persona::factory(10)->create();
         Vehiculo::factory(10)->create();

@@ -1,0 +1,48 @@
+@page {
+    margin: 100px 1in 1in 1in;
+  }
+  header {
+    position: fixed;
+    top: -80px;
+    left: -39;
+    right: -39;
+    height: 100px;
+    padding: 10px 50px;
+    z-index: 1000;
+  }
+.parrafo
+{
+    text-align: justify;
+    font-size: 14px;
+    margin-top: 65px;
+}
+table , td, th {
+	border: 1px solid #595959;
+	border-collapse: collapse;
+    width: 100%;
+}
+td, th {
+	padding: 3px;
+	width: 30px;
+	height: 25px;
+    font-size: 12px;
+    text-align: center;
+}
+th {
+	background: #f0e6cc;
+}
+.even {
+	background: #fbf8f0;
+}
+.odd {
+	background: #fefcf9;
+}
+
+.page-break {
+    page-break-after: always;
+}
+.tipo
+{
+    text-align: center;
+    left: 100;
+}
