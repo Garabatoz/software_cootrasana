@@ -12,7 +12,7 @@
             <table>
                 <tbody>
                     <tr>
-                        <td rowspan="3"><img src="https://terminalesmedellin.com/wp-content/uploads/2021/04/cootrasana.jpeg" width="100px" alt=""></td>
+                        <td rowspan="3"><img src="https://terminalesmedellin.com/wp-content/uploads/2021/04/cootrasana.jpeg" width="100%" alt=""></td>
                         <td colspan="5">FORMATO</td>
                     </tr>
                     <tr>
