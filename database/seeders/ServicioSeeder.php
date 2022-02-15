@@ -16,28 +16,23 @@ class ServicioSeeder extends Seeder
     {
         Servicio::create
         ([
-            'servicio' => 'Empresarial',
-            'slug' => 'empresarial'
+            'servicio' => 'Empresarial'
         ]);
         Servicio::create
         ([
-            'servicio' => 'Escolar',
-            'slug' => 'escolar'
+            'servicio' => 'Escolar'
         ]);
         Servicio::create
         ([
-            'servicio' => 'Turismo',
-            'slug' => 'turismo'
+            'servicio' => 'Turismo'
         ]);
         Servicio::create
         ([
-            'servicio' => 'Ocasional',
-            'slug' => 'ocasional'
+            'servicio' => 'Ocasional'
         ]);
         Servicio::create
         ([
-            'servicio' => 'Salud',
-            'slug' => 'salud'
+            'servicio' => 'Salud'
         ]);
 
     }

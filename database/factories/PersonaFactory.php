@@ -25,8 +25,7 @@ class PersonaFactory extends Factory
             'municipio' => $this->faker->word(),
             'barrio' => $this->faker->word(),
             'fechanac' => $this->faker->date(),
-            'email' => $this->faker->word(),
-            'slug' => Str::slug($nombre)
+            'email' => $this->faker->word()
         ];
     }
 }
