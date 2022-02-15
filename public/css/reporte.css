@@ -16,7 +16,7 @@
     font-size: 14px;
     margin-top: 65px;
 }
-table , td, th {
+table,  td, th {
 	border: 1px solid #595959;
 	border-collapse: collapse;
     width: 100%;
@@ -31,6 +31,7 @@ td, th {
 th {
 	background: #f0e6cc;
 }
+
 .even {
 	background: #fbf8f0;
 }
@@ -46,3 +47,22 @@ th {
     text-align: center;
     left: 100;
 }
+
+#contenedor {
+    display: table;
+    border: 2px solid rgb(255, 255, 255);
+    width: 700px;
+    text-align: float;
+    margin: 0 auto;
+}
+#contenidos {
+    display: table-row;
+}
+#columna1, #columna2, #columna3 {
+    display: table-cell;
+    border: 1px solid rgb(255, 255, 255);
+    vertical-align: middle;
+    padding: 10px;
+}
+
+

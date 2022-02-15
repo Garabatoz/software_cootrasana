@@ -43,17 +43,41 @@ class ContratoController extends Controller
                 'contratos.nroincapac',
                 'contratos.totalpasajeros',
                 'contratos.fregreso',
-                'contratos.fregreso',
                 'contratos.tarifa',
+                'contratos.nombreResponsable',
+                'contratos.cedulaResponsable',
+                'contratos.contactoResponsable',
                 'personas.cedula',
                 'personas.nombre',
                 'personas.apellido',
                 'personas.direccion',
+                'personas.municipio',
+                'personas.fijo',
+                'personas.celular',
+                'personas.email',
                 'servicios.servicio'
+
             )->
             where('contratos.id',$contrato)->first();
-
-        $pdf = PDF::loadView('especiales.contratos.pdf', ['contrato'=>$contratoImprimir]);
+        if($contratoImprimir->servicio == "Ocasional")
+        {
+            $pdf = PDF::loadView('especiales.contratos.pdfOcasional', ['contrato'=>$contratoImprimir]);
+        }
+        if($contratoImprimir->servicio == "Turismo")
+        {
+            $pdf = PDF::loadView('especiales.contratos.pdfTurismo', ['contrato'=>$contratoImprimir]);
+        }
+        if($contratoImprimir->servicio == "Escolar")
+        {
+            $pdf = PDF::loadView('especiales.contratos.pdfEscolar', ['contrato'=>$contratoImprimir]);
+        }
+        if($contratoImprimir->servicio == "Empresarial")
+        {
+            
+            $pdf = PDF::loadView('especiales.contratos.pdfEmpresarial', ['contrato'=>$contratoImprimir]);
+        }
+        
+        
         return $pdf->stream();
 
         //return view('especiales.contratos.pdf',compact('contratos'));
