@@ -40,6 +40,7 @@ class RoleSeeder extends Seeder
         ModelsPermission::create(['name' => 'especiales.contratos.create','description' => 'Crear contratos'])->syncRoles([$role1,$role2]);
         ModelsPermission::create(['name' => 'especiales.contratos.edit','description' => 'Editar contratos'])->syncRoles([$role1,$role2]);
         ModelsPermission::create(['name' => 'especiales.contratos.destroy','description' => 'Eliminar contratos'])->syncRoles([$role1,$role2]);
+        ModelsPermission::create(['name' => 'especiales.contratos.generarContratoPdf','description' => 'Generar Contrato'])->syncRoles([$role1,$role2]);
 
 
 
