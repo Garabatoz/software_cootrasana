@@ -16,6 +16,7 @@ class CreateServiciosTable extends Migration
         Schema::create('servicios', function (Blueprint $table) {
             $table->id();
             $table->string('servicio',15);
+            $table->string('slug',45);
             $table->timestamps();
         });
     }

@@ -7,15 +7,12 @@ use App\Models\Contrato;
 use App\Models\Persona;
 use App\Models\Servicio;
 use App\Models\Vehiculo;
-use Dompdf\Canvas;
 use Livewire\Component;
 use RealRashid\SweetAlert\Facades\Alert;
 use Livewire\WithFileUploads;
-use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 
 class ContratoCreate extends Component
 {
-    use AuthorizesRequests;
 
     //! COMPONENTES
     use WithFileUploads;
@@ -66,7 +63,6 @@ class ContratoCreate extends Component
     }
     public function mount()
     {
-        $this->authorize('especiales.contratos.create');
         $this->llenarCombos();
         $this->getfechaExpedicion();
     }
@@ -78,6 +74,7 @@ class ContratoCreate extends Component
     public function store()
     {
         $this->validate();
+
         $listapasajeros = $this->listapasajeros->store('pasajeros_contratos');
 
         $contrato = Contrato::create
@@ -101,6 +98,7 @@ class ContratoCreate extends Component
             'nroincapac' => $this->nroincapac,
             'listapasajeros' => $listapasajeros,
             'observaciones' => $this->observaciones,
+            'slug' => $this->consecutivo,
             'cliente_id' => $this->cliente_id,
             'servicio_id' => $this->servicio_id
         ]);

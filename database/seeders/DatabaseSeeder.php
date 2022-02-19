@@ -24,9 +24,9 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-
         //Storage::deleteDirectory('pasajeros_contratos');
         Storage::makeDirectory('pasajeros_contratos');
+        $this->call(UserSeeder::class);
         Persona::factory(10)->create();
         Vehiculo::factory(10)->create();
         TipoCliente::factory(10)->create();
@@ -37,7 +37,5 @@ class DatabaseSeeder extends Seeder
         $this->call(ContratoSeeder::class);
         Fuec::factory(10)->create();
         Prueba::factory(10)->create();
-        $this->call(RoleSeeder::class);
-        $this->call(UserSeeder::class);
     }
 }

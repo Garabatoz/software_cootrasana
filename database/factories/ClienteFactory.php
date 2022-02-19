@@ -15,10 +15,13 @@ class ClienteFactory extends Factory
      */
     public function definition()
     {
+        $tipoCliente = TipoCliente::all()->random()->id;
         $persona_id_cliente = $this->faker->unique()->numberBetween(1,10);
         return [
             'tipoCliente_id' => TipoCliente::all()->random()->id,
             'persona_id' =>  $persona_id_cliente,
+            'slug' => Str::slug($tipoCliente),
+
         ];
     }
 }

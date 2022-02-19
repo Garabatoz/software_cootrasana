@@ -6,7 +6,7 @@
 @stop
 
 @section('content')
-    {{-- {!! Form::open(['route' => 'pr.pr.store','autocomplete'=>'off']) !!}
+    {{-- {!! Form::open(['route' => 'especiales.contratos.store','autocomplete'=>'off']) !!}
         @csrf
         @livewire('especiales.contrato-create')
     {!! Form::close() !!} --}}

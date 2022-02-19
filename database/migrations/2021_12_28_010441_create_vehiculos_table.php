@@ -24,6 +24,7 @@ class CreateVehiculosTable extends Migration
             $table->date('vencrtm');
             $table->date('vencsoat');
             $table->date('vencpreopera');
+            $table->string('slug',45);
             $table->timestamps();
         });
     }

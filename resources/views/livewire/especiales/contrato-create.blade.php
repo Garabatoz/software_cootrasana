@@ -121,7 +121,7 @@
                     <div class="row">
                         <div class="col-12">
                             {!! Form::label('origen', 'Origen') !!}
-                            {!! Form::text('origen', old('destino'), ['class' => 'form-control', 'style' => 'width:100%;','wire:model' => 'origen']) !!}
+                            {!! Form::text('origen', null, ['class' => 'form-control', 'style' => 'width:100%;','wire:model' => 'origen']) !!}
                         </div>
                         @error('origen')
                             <br>

@@ -20,7 +20,8 @@ class ConductorFactory extends Factory
             'nrolicencia' => $numlicencia,
             'fvencimiento' => $this->faker->date(),
             'fingreso' => $this->faker->date(),
-            'persona_id' => $persona_id_conductor
+            'persona_id' => $persona_id_conductor,
+            'slug' => Str::slug($numlicencia)
         ];
     }
 }

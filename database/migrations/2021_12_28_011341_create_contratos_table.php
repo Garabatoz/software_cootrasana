@@ -36,6 +36,7 @@ class CreateContratosTable extends Migration
             $table->integer('totalpasajeros');
             $table->string('listapasajeros')->nullable();
             $table->integer('nrovehiculos');
+            $table->string('slug',45)->nullable();
             $table->string('contratofirmado',100)->nullable();
             $table->foreign('cliente_id')->references('id')->on('clientes')->onDelete('cascade');
             $table->foreign('servicio_id')->references('id')->on('servicios')->onDelete('cascade');

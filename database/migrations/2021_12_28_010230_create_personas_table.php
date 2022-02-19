@@ -25,6 +25,7 @@ class CreatePersonasTable extends Migration
             $table->string('barrio',20);
             $table->date('fechanac');
             $table->string('email',25);
+            $table->string('slug',45);
             $table->timestamps();
         });
     }

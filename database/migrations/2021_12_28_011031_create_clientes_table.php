@@ -17,6 +17,7 @@ class CreateClientesTable extends Migration
             $table->id();
             $table->unsignedBigInteger('persona_id')->unique();
             $table->unsignedBigInteger('tipoCliente_id');
+            $table->string('slug',45);
             $table->foreign('persona_id')->references('id')->on('personas')->onDelete('cascade');
             $table->foreign('tipoCliente_id')->references('id')->on('tipo_clientes')->onDelete('cascade');
             $table->timestamps();

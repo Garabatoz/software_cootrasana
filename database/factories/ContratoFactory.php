@@ -41,6 +41,7 @@ class ContratoFactory extends Factory
             'totalpasajeros' => $this->faker->numberBetween(1,99),
             'listapasajeros' => 'pasajeros_contratos/'.$this->faker->image('public/storage/pasajeros_contratos',640,480,null,false),
             'nrovehiculos' => $this->faker->numberBetween(1,99),
+            'slug' => Str::slug($consecutivo),
             'contratofirmado' => 'NO',
         ];
     }

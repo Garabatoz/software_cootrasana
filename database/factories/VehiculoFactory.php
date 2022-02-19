@@ -24,7 +24,8 @@ class VehiculoFactory extends Factory
             'tarjetaop' => $this->faker->numberBetween(1111,9999),
             'vencrtm' => $this->faker->date(),
             'vencsoat' => $this->faker->date(),
-            'vencpreopera' => $this->faker->date()
+            'vencpreopera' => $this->faker->date(),
+            'slug' => Str::slug($numinterno)
         ];
     }
 }

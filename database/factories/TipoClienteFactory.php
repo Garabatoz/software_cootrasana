@@ -15,7 +15,8 @@ class TipoClienteFactory extends Factory
     {
         $tipoCliente = $this->faker->unique()->word();
         return [
-            'tipoCliente' => $tipoCliente
+            'tipoCliente' => $tipoCliente,
+            'slug' => Str::slug($tipoCliente)
         ];
     }
 }
