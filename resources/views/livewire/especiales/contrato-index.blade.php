@@ -14,7 +14,7 @@
                             <th>Destino</th>
                             <th>Cliente</th>
                             <th>Contrato firmado</th>
-                            <th>Contrato</th>
+                            <th></th>
                             <th colspan="2"></th>
                         </tr>
                     </thead>
@@ -27,16 +27,28 @@
                                 <td>{{ $contrato->destino }}</td>
                                 <td>{{ $contrato->nombre }}</td>
                                 <td>{{ $contrato->contratofirmado }}</td>
-                                <td><a target="_blank" href="{{ route('especiales.contratos.pdf',$contrato->contrato_id) }}"><i class="fas fa-lg fa-file-pdf"></i></a></td>
-                                <td width="10px"><a href="{{ route('especiales.contratos.edit', $contrato->contrato_id) }}"
-                                        class="btn btn-primary btn-sm">Firmar</a></td>
+                                <td>
+                                    @can('especiales.contratos.generarContratoPdf')
+                                    <a target="_blank" href="{{ route('especiales.contratos.pdf',$contrato->contrato_id) }}"><i class="fas fa-lg fa-file-pdf"></i></a>
+                                    @endcan
+                                </td>
                                 <td width="10px">
+                                    @can('especiales.contratos.edit')
+                                        <a href="{{ route('especiales.contratos.edit', $contrato->contrato_id) }}"
+                                    class="btn btn-primary btn-sm">Firmar</a>
+                                    @endcan
+                                </td>
+                                <td width="10px">
+                                    @can('especiales.contratos.destroy')
                                     <form action="{{ route('especiales.contratos.destroy', $contrato->contrato_id) }}" method="POST">
                                         @csrf
                                         @method('delete')
                                         <button type="submit" class="btn btn-danger btn-sm">Anular</button>
                                     </form>
+                                    @endcan
                                 </td>
+
+
                             </tr>
                         @endforeach
                     </tbody>
