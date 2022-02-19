@@ -7,6 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Cliente extends Model
 {
+
+    protected $guarded=[];
+
     //!RELACION UNO A MUCHOS
     public function contratos()
     {
