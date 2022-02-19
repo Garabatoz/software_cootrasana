@@ -28,8 +28,11 @@
                                 <td>{{ $contrato->nombre }}</td>
                                 <td>{{ $contrato->contratofirmado }}</td>
                                 <td><a target="_blank" href="{{ route('especiales.contratos.pdf',$contrato->contrato_id) }}"><i class="fas fa-lg fa-file-pdf"></i></a></td>
-                                <td width="10px"><a href="{{ route('especiales.contratos.edit', $contrato->contrato_id) }}"
-                                        class="btn btn-primary btn-sm">Firmar</a></td>
+                                @can('especiales.contratos.edit')
+                                    <td width="10px"><a href="{{ route('especiales.contratos.edit', $contrato->contrato_id) }}"
+                                    class="btn btn-primary btn-sm">Firmar</a></td>
+                                @endcan
+                                @can('especiales.contratos.destroy')
                                 <td width="10px">
                                     <form action="{{ route('especiales.contratos.destroy', $contrato->contrato_id) }}" method="POST">
                                         @csrf
@@ -37,6 +40,8 @@
                                         <button type="submit" class="btn btn-danger btn-sm">Anular</button>
                                     </form>
                                 </td>
+                                @endcan
+
                             </tr>
                         @endforeach
                     </tbody>

@@ -247,17 +247,11 @@ return [
             'can'  => 'manage-blog',
         ], */
         [
-            'text'        => 'Inicio',
+            'text'        => 'Dashboard',
             'route'         => 'home',
             'icon'        => 'far fa-fw fa-file',
-            'active' => ['home']
-        ],
-        ['header' => 'SERVICIOS ESPECIALES'],
-        [
-            'text' => 'Contratos',
-            'route'  => 'especiales.contratos.index',
-            'icon' => 'far fa-address-card fa-fw',
-            'active' => ['especiales/contratos*']
+            'active' => ['home'],
+            'can' => 'home'
         ],
         /* [
             'text' => 'Pruebas',
@@ -265,15 +259,26 @@ return [
             'icon' => 'far fa-address-card fa-fw',
             'active' => ['especiales/pruebas*']
         ], */
-        /* [
-            'text'    => 'multilevel',
-            'icon'    => 'fas fa-fw fa-share',
+        [
+            'text'    => 'Administración',
+            'icon'    => 'fas fa-fw fa-toolbox',
+            'can' => 'administrador',
             'submenu' => [
                 [
-                    'text' => 'level_one',
-                    'url'  => '#',
+                    'text' => 'Usuarios',
+                    'route'  => 'administrador.usuarios.index',
+                    'icon' => 'far fa-user fa-fw',
+                    'active' => ['administrador/usuarios*'],
+                    'can' => 'administrador.usuarios.index'
                 ],
                 [
+                    'text' => 'Roles',
+                    'route'  => 'administrador.roles.index',
+                    'icon' => 'fas fa-users fa-fw',
+                    'active' => ['administrador/roles*'],
+                    'can' => 'administrador.roles.index'
+                ],
+                /* [
                     'text'    => 'level_one',
                     'url'     => '#',
                     'submenu' => [
@@ -296,14 +301,28 @@ return [
                             ],
                         ],
                     ],
-                ],
-                [
+                ], */
+                /* [
                     'text' => 'level_one',
                     'url'  => '#',
+                ], */
+            ],
+        ],
+        [
+            'text'    => 'Especiales',
+            'icon'    => 'fas fa-fw fa-umbrella-beach',
+            'can' => 'especiales',
+            'submenu' => [
+                [
+                    'text' => 'Contratos',
+                    'route'  => 'especiales.contratos.index',
+                    'icon' => 'far fa-address-card fa-fw',
+                    'active' => ['especiales/contratos*'],
+                    'can' => 'especiales.contratos.index'
                 ],
             ],
         ],
-        ['header' => 'labels'],
+        /* ['header' => 'labels'],
         [
             'text'       => 'important',
             'icon_color' => 'red',

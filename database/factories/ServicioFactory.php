@@ -16,8 +16,7 @@ class ServicioFactory extends Factory
     {
         $servicio = $this->faker->unique()->word();
         return [
-            'servicio' => $servicio,
-            'slug' => Str::slug($servicio)
+            'servicio' => $servicio
         ];
     }
 }
