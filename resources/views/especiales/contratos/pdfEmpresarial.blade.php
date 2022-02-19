@@ -9,11 +9,11 @@
 </head>
 <body>
     <header>
-      
+
             <table>
                 <tbody>
                     <tr>
-                        <td rowspan="3"><img src="https://terminalesmedellin.com/wp-content/uploads/2021/04/cootrasana.jpeg" width="100px" alt=""></td>
+                        <td rowspan="3"><img src="https://terminalesmedellin.com/wp-content/uploads/2021/04/cootrasana.jpeg" width="100%" alt=""></td>
                         <td colspan="5">FORMATO</td>
                     </tr>
                     <tr>
@@ -37,7 +37,7 @@
             <br><br>
             Entre los suscritos a saber: <strong>COOPERATIVA DE TRANSPORTADORES SAN ANTONIO COOTRASANA,</strong> obrando en calidad de transportadora u operador de Servicio de Transportes Especiales habilitada por el ministerio de transporte bajo Resolución 013 de 16 de febrero de 2016 para la prestación de servicios de transporte de pasajeros en la modalidad de especial, representada legalmente por  <strong>JOSÉ JAVIER CASTAÑO GIRALDO. Identificado con Cédula de Ciudadanía 70.084.127, mayor de edad</strong> y con domicilio en Medellín, quien manifiesta que no está incurso en ninguna causal de inhabilidad o incompatibilidad para contratar y para efectos del contrato se denominará  <strong>EL OPERADOR. </strong><br><br>
 
-            Y  <strong>GUSTAVO ELIAS GUTIERREZ VILLA identificado(a) como Aparece al pie de su firma, mayor de edad y con Cédula de Ciudadanía número 70.565.371,</strong> obrando en calidad de Representante Legal de <strong>ESTACO S.A.</strong> con NIT.<strong>890916766-4</strong> Contratante del servicio de Transporte Turístico con <strong>RNT73487,</strong> hemos convenido celebrar el presente contrato de prestación de Servicios de Transporte Especial que se especifica a continuación para dar cumplimiento a los Artículos 12 y 13 del DECRETO 348 de 2015. Y que se regirá por las normas civiles y comerciales y demás disposiciones concordantes y complementarias y en lo no regulado como aparece en las siguientes clausulas: 
+            Y  <strong>GUSTAVO ELIAS GUTIERREZ VILLA identificado(a) como Aparece al pie de su firma, mayor de edad y con Cédula de Ciudadanía número 70.565.371,</strong> obrando en calidad de Representante Legal de <strong>ESTACO S.A.</strong> con NIT.<strong>890916766-4</strong> Contratante del servicio de Transporte Turístico con <strong>RNT73487,</strong> hemos convenido celebrar el presente contrato de prestación de Servicios de Transporte Especial que se especifica a continuación para dar cumplimiento a los Artículos 12 y 13 del DECRETO 348 de 2015. Y que se regirá por las normas civiles y comerciales y demás disposiciones concordantes y complementarias y en lo no regulado como aparece en las siguientes clausulas:
                 <br><br>
 
                 <div class="tipo"><strong>PRIMERO</strong></div>
@@ -186,7 +186,7 @@
 <div class="tipo"><strong>TERCERO</strong></div>
 <br>
 
-<strong>OBLIGACIONES DEL OPERADOR:</strong> 
+<strong>OBLIGACIONES DEL OPERADOR:</strong>
 <br><br>
 1.	La obligación  principal de “EL OPERADOR” es prestar el servicio de transporte, disponiendo para ello de los vehículos necesarios y en buen estado, para cubrir las rutas previamente señaladas.<br>
 2.	Cada vehículo deberá contar con  un medio de comunicación Teléfono-celular, botiquín de primeros auxilios y equipo de carretera; el vehículo deberá mantenerse en buenas condiciones mecánicas y de mantenimiento como: pintura, tapizado, aseo, higiene y presentación general; cada vehículo deberá estar dotado de los elementos de seguridad exigido por las autoridades de tránsito según la ley 769 de 2002 Art. 30 Acuerdo 051 de 1993, Art. 116 de Ministerio de Transporte y demás que regulen en la  Decreto  769 de 2002.<br>
@@ -225,9 +225,9 @@
 7.	Determinar los recorridos ordinarios y solicitar recorridos especiales que se requiera con la debida anticipación. <br>
 8.	Informar con anterioridad no menor a 24 horas cualquier cambio hecho al recorrido o a los horarios. <br>
 9.	Permitir al CONTRATISTA el uso de los parqueaderos de la empresa CONTRATANTE  solo para  la prestación del servicio y bajo los parámetros convenidos por las partes.<br>
-10.	Disciplinar al personal  que incurra en conductas que afecten la convivencia pacífica o pongan en riesgos la seguridad y operación  del transporte manteniendo siempre respeto hacia el conductor. <br> 
+10.	Disciplinar al personal  que incurra en conductas que afecten la convivencia pacífica o pongan en riesgos la seguridad y operación  del transporte manteniendo siempre respeto hacia el conductor. <br>
 11.	Cumplir con las estipulaciones y obligaciones consignadas en el plan estratégico de seguridad vial de la empresa de transporte. <br>
-12.	Responder por los daños materiales causados por los pasajeros al vehículo, para lo cual el conductor deberá informar inmediatamente en forma personal y escrita al EL CONTRATANTE, dejando la respectiva y clara anotación y durante las dos primeras horas siguientes de haberse presentado los hechos.<br> 
+12.	Responder por los daños materiales causados por los pasajeros al vehículo, para lo cual el conductor deberá informar inmediatamente en forma personal y escrita al EL CONTRATANTE, dejando la respectiva y clara anotación y durante las dos primeras horas siguientes de haberse presentado los hechos.<br>
 13.	Hacerse responsable de su propio equipaje. <br><br><br>
 
 <div class="tipo"><strong>QUINTO</div>
@@ -235,7 +235,7 @@
 
 <strong>VALOR DEL CONTRATO Y FORMA DE PAGO:</strong> El costo del servicio de transporte durante el 2019 será de $ 405.000 por vehículo de 40 pasajeros y por día de servicio prestado, el total equivalente a los servicios prestados debe ser cancelado durante los primeros cinco días de cada mes para garantizar la prestación del servicio. Dicho valor deberá consignarse en la cuenta Corriente del BANCO DE BOGOTÁ Número 154032031 a nombre de COOTRASANA. <br><br>
 
-<strong>Parágrafo Primero:</strong> En  caso de un cambio en la operación se revisarán las tarifas y se llegará a un acuerdo entre las partes. 
+<strong>Parágrafo Primero:</strong> En  caso de un cambio en la operación se revisarán las tarifas y se llegará a un acuerdo entre las partes.
 <div class="page-break"></div><br><br><br><br><br>
 
 <div class="tipo"><strong>SEXTO</div>
@@ -253,19 +253,19 @@
  <div class="tipo"><strong>OCTAVO</div>
 <br>
 
-<strong>FUERZA MAYOR O CASO FORTUITO:</strong> El OPERADOR no será responsable ni se considerará que ha incurrido en incumplimiento de sus obligaciones por cualquier demora en la prestación de sus servicios, si se presentase durante su ejecución, circunstancia de fuerza mayor o caso fortuito. El OPERADOR se obliga a notificar por escrito al CONTRATANTE de las circunstancias que constituyen la fuerza mayor o caso fortuito, u otros hechos fuera de su control, acompañando la exposición de motivos correspondientes. 
+<strong>FUERZA MAYOR O CASO FORTUITO:</strong> El OPERADOR no será responsable ni se considerará que ha incurrido en incumplimiento de sus obligaciones por cualquier demora en la prestación de sus servicios, si se presentase durante su ejecución, circunstancia de fuerza mayor o caso fortuito. El OPERADOR se obliga a notificar por escrito al CONTRATANTE de las circunstancias que constituyen la fuerza mayor o caso fortuito, u otros hechos fuera de su control, acompañando la exposición de motivos correspondientes.
  <br><br><br>
 
  <div class="tipo"><strong>NOVENO</div>
 <br>
 
-<strong>RELACIÓN LABORAL: </strong>Respecto al presente contrato, este en ningún caso generará relación laboral ni prestaciones sociales. EL OPERADOR no tendrá ninguna relación laboral ni con el CONTRATANTE, ni con las personas que subcontrate y por ende será necesario que previa la suscripción del presente contrato, EL OPERADOR entregue los documentos que prueben la afiliación al sistema de seguridad social de cada uno de los conductores subcontratados para el mismo. 
+<strong>RELACIÓN LABORAL: </strong>Respecto al presente contrato, este en ningún caso generará relación laboral ni prestaciones sociales. EL OPERADOR no tendrá ninguna relación laboral ni con el CONTRATANTE, ni con las personas que subcontrate y por ende será necesario que previa la suscripción del presente contrato, EL OPERADOR entregue los documentos que prueben la afiliación al sistema de seguridad social de cada uno de los conductores subcontratados para el mismo.
  <br><br><br>
 
  <div class="tipo"><strong>DÉCIMO</div>
 <br>
 
-<strong>SUJECIÓN A LA LEY COLOMBIANA: </strong>Para cualquier efecto que dé lugar al incumplimiento de este contrato, se someterá a la ley colombiana y a las autoridades legales preestablecidas. 
+<strong>SUJECIÓN A LA LEY COLOMBIANA: </strong>Para cualquier efecto que dé lugar al incumplimiento de este contrato, se someterá a la ley colombiana y a las autoridades legales preestablecidas.
  <br><br><br>
 
  <div class="tipo"><strong>DÉCIMO PRIMERO</div>
@@ -292,19 +292,19 @@
  <div class="tipo"><strong> DÉCIMO TERCERO</div>
 <br>
 
-<strong>SOLUCION DE CONTROVERSIA:</strong>Los conflictos que surjan durante la ejecución del objeto contractual se solucionarán preferiblemente mediante los mecanismos de conciliación y transacción. 
+<strong>SOLUCION DE CONTROVERSIA:</strong>Los conflictos que surjan durante la ejecución del objeto contractual se solucionarán preferiblemente mediante los mecanismos de conciliación y transacción.
  <br><br><br>
 
  <div class="tipo"><strong> DÉCIMO CUARTO</div>
 <br>
 
-<strong>INTERESES MORATORIOS:</strong>Cualquiera de las obligaciones aquí contraídas, causarán intereses moratorios conforme a la certificación que expida la Superintendencia Bancaria o el Banco de la República. 
+<strong>INTERESES MORATORIOS:</strong>Cualquiera de las obligaciones aquí contraídas, causarán intereses moratorios conforme a la certificación que expida la Superintendencia Bancaria o el Banco de la República.
  <br><br>
 
  <div class="tipo"><strong>DECIMO QUINTO</div>
 <br>
 
-<strong>INTERPRETACIÓN DE SITUACIONES: </strong>Si se admiten, toleran o se presentasen hechos o situaciones bilaterales en adelante por este contrato. EL OPERADOR manifiesta que conoce y entiende por lo cual además acepta el contenido de cada una de las cláusulas redactadas en el presente contrato, que lo leyó y le da su aprobación. 
+<strong>INTERPRETACIÓN DE SITUACIONES: </strong>Si se admiten, toleran o se presentasen hechos o situaciones bilaterales en adelante por este contrato. EL OPERADOR manifiesta que conoce y entiende por lo cual además acepta el contenido de cada una de las cláusulas redactadas en el presente contrato, que lo leyó y le da su aprobación.
 <br><br>
 
 <div class="tipo"><strong>DECIMO SÉXTO</div>
@@ -388,7 +388,7 @@ E)	Derecho a acceder a sus datos personales.
 <div class="tipo"><strong>VIGÉSIMO</div>
 <br>
 
-<strong> TITULO EJECUTIVO: </strong>El presente contrato de transporte presta mérito ejecutivo, por contener una obligación clara, expresa, exigible y constituye en todas sus partes y anexos (certificados de existencia y representación legal de las partes, pagaré, carta de instrucciones,  facturas y los  Anexos N° 1 “Relación de personas a transportar y  Anexo N° 2 “Plan de rodamiento”. Plena prueba contra el deudor según el artículo 488 del código de Procedimiento Civil. 
+<strong> TITULO EJECUTIVO: </strong>El presente contrato de transporte presta mérito ejecutivo, por contener una obligación clara, expresa, exigible y constituye en todas sus partes y anexos (certificados de existencia y representación legal de las partes, pagaré, carta de instrucciones,  facturas y los  Anexos N° 1 “Relación de personas a transportar y  Anexo N° 2 “Plan de rodamiento”. Plena prueba contra el deudor según el artículo 488 del código de Procedimiento Civil.
 Para constancia y aceptación, se firma por las partes en Guarne, el día ______ del mes 10 del año 2019, en dos ejemplares del mismo valor, con destino cada uno de ellos a cada una de las partes.<br><br>
 <div class="page-break"></div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
@@ -396,11 +396,11 @@ Para constancia y aceptación, se firma por las partes en Guarne, el día ______
       <tr>
       <td> Gustavo Alveiro Jaramillo Franco<br>
            Representante Legal Cootrasana <br>
-           Operador y/o Contratista<br>   
-      </td> 
+           Operador y/o Contratista<br>
+      </td>
       <td> {{$contrato->nombreResponsable}}<br>
       Contratante<br>
-      </td>                                                          
+      </td>
       </tr>
             </table>
 <div class="page-break"></div><br><br><br><br><br>
@@ -419,7 +419,7 @@ Para constancia y aceptación, se firma por las partes en Guarne, el día ______
                         <td colspan="5"><strong>NOMBRE COMPLETO</strong></td>
                         <td colspan="4"><strong>DOCUMENTO DE IDENTIDAD</strong></td>
                         <td colspan="1"><strong>T°</strong></td>
-                        
+
                     </tr>
                     <tr>
                     <td colspan="1"><strong></strong></td>
@@ -430,7 +430,7 @@ Para constancia y aceptación, se firma por las partes en Guarne, el día ______
                         <td colspan="5"><strong></strong></td>
                         <td colspan="4"><strong></strong></td>
                         <td colspan="1"><strong></strong></td>
-                        
+
                     </tr>
                     <tr>
                     <td colspan="1"><strong></strong></td>
@@ -441,7 +441,7 @@ Para constancia y aceptación, se firma por las partes en Guarne, el día ______
                         <td colspan="5"><strong></strong></td>
                         <td colspan="4"><strong></strong></td>
                         <td colspan="1"><strong></strong></td>
-                        
+
                     </tr> <tr>
                     <td colspan="1"><strong></strong></td>
                         <td colspan="5"><strong></strong></td>
@@ -451,7 +451,7 @@ Para constancia y aceptación, se firma por las partes en Guarne, el día ______
                         <td colspan="5"><strong></strong></td>
                         <td colspan="4"><strong></strong></td>
                         <td colspan="1"><strong></strong></td>
-                        
+
                     </tr> <tr>
                     <td colspan="1"><strong></strong></td>
                         <td colspan="5"><strong></strong></td>
@@ -471,7 +471,7 @@ Para constancia y aceptación, se firma por las partes en Guarne, el día ______
                         <td colspan="5"><strong></strong></td>
                         <td colspan="4"><strong></strong></td>
                         <td colspan="1"><strong></strong></td>
-                        
+
                         </tr> <tr>
                     <td colspan="1"><strong></strong></td>
                         <td colspan="5"><strong></strong></td>
@@ -481,7 +481,7 @@ Para constancia y aceptación, se firma por las partes en Guarne, el día ______
                         <td colspan="5"><strong></strong></td>
                         <td colspan="4"><strong></strong></td>
                         <td colspan="1"><strong></strong></td>
-                        
+
                         </tr> <tr>
                     <td colspan="1"><strong></strong></td>
                         <td colspan="5"><strong></strong></td>
@@ -491,7 +491,7 @@ Para constancia y aceptación, se firma por las partes en Guarne, el día ______
                         <td colspan="5"><strong></strong></td>
                         <td colspan="4"><strong></strong></td>
                         <td colspan="1"><strong></strong></td>
-                        
+
                         </tr> <tr>
                     <td colspan="1"><strong></strong></td>
                         <td colspan="5"><strong></strong></td>
@@ -501,7 +501,7 @@ Para constancia y aceptación, se firma por las partes en Guarne, el día ______
                         <td colspan="5"><strong></strong></td>
                         <td colspan="4"><strong></strong></td>
                         <td colspan="1"><strong></strong></td>
-                        
+
                     </tr> <tr>
                     <td colspan="1"><strong></strong></td>
                         <td colspan="5"><strong></strong></td>
@@ -511,7 +511,7 @@ Para constancia y aceptación, se firma por las partes en Guarne, el día ______
                         <td colspan="5"><strong></strong></td>
                         <td colspan="4"><strong></strong></td>
                         <td colspan="1"><strong></strong></td>
-                        
+
                     </tr> <tr>
                     <td colspan="1"><strong></strong></td>
                         <td colspan="5"><strong></strong></td>
@@ -521,7 +521,7 @@ Para constancia y aceptación, se firma por las partes en Guarne, el día ______
                         <td colspan="5"><strong></strong></td>
                         <td colspan="4"><strong></strong></td>
                         <td colspan="1"><strong></strong></td>
-                        
+
                     </tr> <tr>
                     <td colspan="1"><strong></strong></td>
                         <td colspan="5"><strong></strong></td>
@@ -531,7 +531,7 @@ Para constancia y aceptación, se firma por las partes en Guarne, el día ______
                         <td colspan="5"><strong></strong></td>
                         <td colspan="4"><strong></strong></td>
                         <td colspan="1"><strong></strong></td>
-                        
+
                     </tr> <tr>
                     <td colspan="1"><strong></strong></td>
                         <td colspan="5"><strong></strong></td>
@@ -541,7 +541,7 @@ Para constancia y aceptación, se firma por las partes en Guarne, el día ______
                         <td colspan="5"><strong></strong></td>
                         <td colspan="4"><strong></strong></td>
                         <td colspan="1"><strong></strong></td>
-                        
+
                     </tr> <tr>
                     <td colspan="1"><strong></strong></td>
                         <td colspan="5"><strong></strong></td>
@@ -551,8 +551,8 @@ Para constancia y aceptación, se firma por las partes en Guarne, el día ______
                         <td colspan="5"><strong></strong></td>
                         <td colspan="4"><strong></strong></td>
                         <td colspan="1"><strong></strong></td>
-                        
-                    </tr> 
+
+                    </tr>
                     <tr>
                     <td colspan="1"><strong></strong></td>
                         <td colspan="5"><strong></strong></td>
@@ -562,8 +562,8 @@ Para constancia y aceptación, se firma por las partes en Guarne, el día ______
                         <td colspan="5"><strong></strong></td>
                         <td colspan="4"><strong></strong></td>
                         <td colspan="1"><strong></strong></td>
-                        
-                    </tr> 
+
+                    </tr>
                     <tr>
                     <td colspan="1"><strong></strong></td>
                         <td colspan="5"><strong></strong></td>
@@ -573,8 +573,8 @@ Para constancia y aceptación, se firma por las partes en Guarne, el día ______
                         <td colspan="5"><strong></strong></td>
                         <td colspan="4"><strong></strong></td>
                         <td colspan="1"><strong></strong></td>
-                        
-                    </tr> 
+
+                    </tr>
                     <tr>
                     <td colspan="1"><strong></strong></td>
                         <td colspan="5"><strong></strong></td>
@@ -584,7 +584,7 @@ Para constancia y aceptación, se firma por las partes en Guarne, el día ______
                         <td colspan="5"><strong></strong></td>
                         <td colspan="4"><strong></strong></td>
                         <td colspan="1"><strong></strong></td>
-                        
+
                     </tr> <tr>
                     <td colspan="1"><strong></strong></td>
                         <td colspan="5"><strong></strong></td>
@@ -594,7 +594,7 @@ Para constancia y aceptación, se firma por las partes en Guarne, el día ______
                         <td colspan="5"><strong></strong></td>
                         <td colspan="4"><strong></strong></td>
                         <td colspan="1"><strong></strong></td>
-                        
+
                     </tr> <tr>
                     <td colspan="1"><strong></strong></td>
                         <td colspan="5"><strong></strong></td>
@@ -604,7 +604,7 @@ Para constancia y aceptación, se firma por las partes en Guarne, el día ______
                         <td colspan="5"><strong></strong></td>
                         <td colspan="4"><strong></strong></td>
                         <td colspan="1"><strong></strong></td>
-                        
+
                     </tr> <tr>
                     <td colspan="1"><strong></strong></td>
                         <td colspan="5"><strong></strong></td>
@@ -614,7 +614,7 @@ Para constancia y aceptación, se firma por las partes en Guarne, el día ______
                         <td colspan="5"><strong></strong></td>
                         <td colspan="4"><strong></strong></td>
                         <td colspan="1"><strong></strong></td>
-                        
-                    </tr> 
+
+                    </tr>
 </body>
 </html>

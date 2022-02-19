@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Persona;
 use App\Models\User;
 use Illuminate\Database\Seeder;
 
@@ -14,14 +15,16 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
+
         User::create
         ([
             'name' => 'Edison Andres Leon',
             'email' => 'andresleon90s@gmail.com',
-            'username' => '1036633625',
-            'condition' => '1',
+            'username' => 'admin',
+            'condition' => 1,
             'password' => bcrypt('123'),
+            'persona_id' => 1,
         ])->assignRole('Administrador');
-        User::factory(9)->create();
+        //User::factory(3)->create();
     }
 }
