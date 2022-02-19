@@ -30,10 +30,6 @@ class ServicioSeeder extends Seeder
         ([
             'servicio' => 'Ocasional'
         ]);
-        Servicio::create
-        ([
-            'servicio' => 'Salud'
-        ]);
 
     }
 }

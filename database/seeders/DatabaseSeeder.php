@@ -31,13 +31,12 @@ class DatabaseSeeder extends Seeder
         Vehiculo::factory(10)->create();
         TipoCliente::factory(10)->create();
         Cliente::factory(10)->create();
-        //Conductor::factory(10)->create();
-        //Servicio::factory(10)->create();
         $this->call(ServicioSeeder::class);
         $this->call(ContratoSeeder::class);
         Fuec::factory(10)->create();
         Prueba::factory(10)->create();
         $this->call(RoleSeeder::class);
+        //Conductor::factory(10)->create();
         $this->call(UserSeeder::class);
     }
 }

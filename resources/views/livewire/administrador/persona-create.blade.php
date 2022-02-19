@@ -4,18 +4,24 @@
             <h5>Seleccione el rol de la persona</h5>
         </div>
         <div class="card-body">
+            @can('administrador.personas.createCliente')
             <label>
                 {{Form::checkbox('cliente', 'cliente',null,['class' => 'mr-1','wire:model' => 'rolCliente'])}}
                 Cliente
             </label><br>
+            @endcan
+            @can('administrador.personas.createConductor')
             <label>
                 {{Form::checkbox('conductor', 'conductor',null,['class' => 'mr-1','wire:model' => 'rolConductor'])}}
                 Conductor
             </label><br>
+            @endcan
+            @can('administrador.personas.createUsuario')
             <label>
                 {{Form::checkbox('usuario', 'usuario',null,['class' => 'mr-1','wire:model' => 'rolUsuario'])}}
                 Usuario
             </label>
+            @endcan
         </div>
     </div>
 
@@ -152,6 +158,14 @@
         </div>
         <div class="card-body">
             <div class="form-group">
+                {!! Form::label('username', 'Nombre de usuario') !!}
+                {!! Form::text('username', null, ['class' => 'form-control', 'style' => 'width:100%;', 'wire:model' => 'username']) !!}
+            </div>
+            @error('username')
+            <small  Style="color: red;font-weight:bold;">*{{$message}}</small>
+        <br>
+        @enderror
+            <div class="form-group">
                 {!! Form::label('password', 'Contraseña') !!}
                 {{ Form::password('password', array('id' => 'password', "class" => "form-control", 'wire:model' => 'password')) }}
             </div>
@@ -168,32 +182,22 @@
                         </label>
                     </div>
                 @endforeach
+                @error('roles')
+                <small  Style="color: red;font-weight:bold;">*{{$message}}</small>
+            <br>
+            @enderror
         </div>
     </div>
     @endif
     <div>
         {!! Form::submit('Crear persona', ['class' => 'btn btn-primary','wire:click' => 'store()']) !!}
+        {!! Toastr::message() !!}
         <br>
         <br>
     </div>
     </div>
 
-    {{-- <script>
-        document.addEventListener('livewire:load', function() {
-            $('.select2Clientes').select2();
-            $('.select2Vehiculos').select2();
-            $('.select2Conductors').select2();
-            $('.select2Clientes').on('change', function() {
-                @this.set('cliente_id', this.value)
-            });
-            $('.select2Vehiculos').on('change', function() {
-                @this.set('vehiculo_id', this.value)
-            });
-            $('.select2Conductors').on('change', function() {
-                @this.set('conductor_id', this.value)
-            });
-        })
-
+    <script>
         window.addEventListener('alert', event => {
              toastr[event.detail.type](event.detail.message,
              event.detail.title ?? ''), toastr.options = {
@@ -201,6 +205,5 @@
                     "progressBar": true,
                 }
             });
-
-    </script> --}}
+    </script>
 </div>

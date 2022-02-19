@@ -6,6 +6,7 @@ use App\Models\Cliente;
 use App\Models\Conductor;
 use App\Models\Persona;
 use App\Models\User;
+use Exception;
 use Livewire\Component;
 use Livewire\WithFileUploads;
 use RealRashid\SweetAlert\Facades\Alert;
@@ -23,45 +24,72 @@ class PersonaCreate extends Component
     //! INFORMACIÓN DE CONDUCTORES
     public $nrolicencia,$fvencimiento,$fingreso;
     //! INFORMACIÓN DE USUARIOS
-    public $password;
+    public $username,$password;
     //! OPCIONES DE FORMULARIO
     public $rolCliente,$rolUsuario,$rolConductor, $roles = [],$listaRoles;
     //! CONTROL DE VALIDACIONES
      protected $rules =
     [
-        'cedula' => 'required|max:9999999999|numeric',
-        'nombre' => 'required',
-        'apellido' => 'required',
-        'fijo' => 'required',
+        'cedula' => 'required|max:9999999999|numeric|unique:personas',
+        'nombre' => 'required|max:15',
+        'apellido' => 'required|max:15',
+        'fijo' => 'required|max:9999999999|numeric',
         'celular' => 'required|digits:10',
-        'direccion' => 'required',
-        'municipio' => 'required',
-        'barrio' => 'required',
-        'email' => 'required|email',
+        'direccion' => 'required|max:50',
+        'municipio' => 'required|max:20',
+        'barrio' => 'required|max:20',
         'fechanac' => 'required'
     ];
     protected $rulesUsuario =
     [
-        'password' => 'required'
+        'email' => 'required|unique:users',
+        'roles' => 'required',
+        'password' => 'required',
     ];
     protected $rulesConductor =
     [
-        'nrolicencia' => 'required',
+        'nrolicencia' => 'required|max:20',
         'fvencimiento' => 'required',
         'fingreso'=> 'required'
     ];
     protected $validationAttributes = [
         'fijo' => 'teléfono fijo',
         'fechanac' => 'fecha de nacimiento',
+        'username' => 'nombre de usuario',
+        'password' => 'contraseña',
     ];
     protected $messages = [
         'cedula.max' => 'La cédula no puede tener mas de 10 números.',
+        'cedula.unique' => 'Esta cédula ya esta registrada.',
+
         'celular.digits' => 'El campo celular debe tener 10 dígitos.',
+
         'email.email' => 'Debe colocar una dirección de correo válida.',
+        'email.unique' => 'Este correo electrónico ya está registrado.',
+
+        'username.unique' => 'Este nombre de usuario ya existe.',
+
+        'roles.required' => 'Debe elegir por lo menos un rol para este usuario.',
+
+
     ];
-    public function updated($propertyName)
+    public function updatedCedula()
     {
-        $this->validateOnly($propertyName);
+        $this->validate([
+            'cedula' => 'required|max:9999999999|numeric|unique:personas'
+          ]);
+    }
+    public function updatedUsername()
+    {
+        $this->validate([
+            'username' => 'required|unique:users',
+          ]);
+    }
+    public function updatedEmail()
+    {
+        $this->validate([
+            'email' => 'required|email|max:50|unique:personas',
+          ]);
     }
 
     //! MÉTODO INICIAL
@@ -89,51 +117,101 @@ class PersonaCreate extends Component
             $this->validate($val);
         }
         $this->validate($this->rules);
-
-        $persona = Persona::create
-        ([
-            'cedula' =>$this->cedula,
-            'nombre' =>$this->nombre,
-            'apellido' => $this->apellido,
-            'fijo' => $this->fijo,
-            'celular' => $this->celular,
-            'direccion' => $this->direccion,
-            'municipio' => $this->municipio,
-            'barrio' => $this->barrio,
-            'fechanac' => $this->fechanac,
-            'email' => $this->email
-        ]);
+        if($this->rolConductor == null && $this->rolCliente == null && $this->rolUsuario == null)
+        {
+            $this->dispatchBrowserEvent('alert',
+                ['type' => 'error',  'message' => 'Debe seleccionar un tipo de persona']);
+        }
+        else
+        {
+        $this->authorize('administrador.personas.create');
+        try
+        {
+            $persona = Persona::create
+            ([
+                'cedula' =>$this->cedula,
+                'nombre' =>$this->nombre,
+                'apellido' => $this->apellido,
+                'fijo' => $this->fijo,
+                'celular' => $this->celular,
+                'direccion' => $this->direccion,
+                'municipio' => $this->municipio,
+                'barrio' => $this->barrio,
+                'fechanac' => $this->fechanac,
+                'email' => $this->email
+            ]);
+        }
+        catch(Exception $e)
+        {
+            $this->dispatchBrowserEvent('alert',
+                ['type' => 'error',  'message' => 'Ocurrio un error'.$e]);
+                return false;
+        }
         if($this->rolUsuario=='usuario')
         {
-            $usuario = User::create
-            ([
-                'name' => $this->nombre,
-                'email' => $this->email,
-                'password' => bcrypt($this->password)
-            ]);
-            $usuario->roles()->sync($this->roles);
+            $this->authorize('administrador.personas.createUsuario');
+            try{
+                $usuario = User::create
+                ([
+                    'name' => $this->nombre.' '.$this->apellido,
+                    'email' => $this->email,
+                    'condition' => '1',
+                    'username' => $this->username,
+                    'persona_id' => $persona->id,
+                    'password' => bcrypt($this->password)
+                ]);
+                $usuario->roles()->sync($this->roles);
+            }catch(Exception $e)
+            {
+                $persona->delete();
+                $this->dispatchBrowserEvent('alert',
+                ['type' => 'error',  'message' => 'Ocurrio un error'.$e]);
+                return false;
+            }
+
          }
         if($this->rolConductor=='conductor')
         {
-            Conductor::create
-            ([
-                'nrolicencia' => $this->nrolicencia,
-                'fvencimiento' => $this->fvencimiento,
-                'fingreso' => $this->fingreso,
-                'persona_id' => $persona->id
-            ]);
+            $this->authorize('administrador.personas.createConductor');
+            try
+            {
+                Conductor::create
+                ([
+                    'nrolicencia' => $this->nrolicencia,
+                    'fvencimiento' => $this->fvencimiento,
+                    'fingreso' => $this->fingreso,
+                    'persona_id' => $persona->id
+                ]);
+            }
+            catch(Exception $e)
+            {
+                $persona->delete();
+                $this->dispatchBrowserEvent('alert',
+                ['type' => 'error',  'message' => 'Ocurrio un error'.$e]);
+                return false;
+            }
         }
         if($this->rolCliente=='cliente')
         {
+            $this->authorize('administrador.personas.createCliente');
+            try{
             Cliente::create
             ([
                 'persona_id' => $persona->id,
                 'tipoCliente_id' => 1,
             ]);
         }
-
+        catch(Exception $e)
+        {
+            $persona->delete();
+            $this->dispatchBrowserEvent('alert',
+            ['type' => 'error',  'message' => 'Ocurrio un error'.$e]);
+            return false;
+        }
+        }
         Alert::toast('Persona guardada correctamente','success');
         return redirect()->route('administrador.personas.index');
+    }
     }
     public function render()
     {

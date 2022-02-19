@@ -12,7 +12,7 @@
             <table>
                 <tbody>
                     <tr>
-                        <td rowspan="3"><img src="https://terminalesmedellin.com/wp-content/uploads/2021/04/cootrasana.jpeg" width="100px" alt=""></td>
+                        <td rowspan="3"><img src="https://terminalesmedellin.com/wp-content/uploads/2021/04/cootrasana.jpeg" width="100%" alt=""></td>
                         <td colspan="5">FORMATO</td>
                     </tr>
                     <tr>
@@ -41,12 +41,12 @@
             <br>
             <br>
 
-            Entre los suscritos a saber: COOPERATIVA DE TRANSPORTADORES SAN ANTONIO COOTRASANA, obrando en calidad de transportadora u operador de Servicio de Transportes Especiales en su modalidad escolar y el Contratante <strong>{{$contrato->nombre}} {{$contrato->apellido}}</strong> con NIT <strong>{{$contrato->cedula}}</strong>, Dirección <strong>{{$contrato->direccion}}</strong>, Teléfono <strong>{{$contrato->fijo}}</strong>, obrando en calidad de Contratante del servicio de Transporte Escolar, han decidido celebrar un contrato de Transporte Especial Escolar que se regirá por las siguientes clausulas: 
+            Entre los suscritos a saber: COOPERATIVA DE TRANSPORTADORES SAN ANTONIO COOTRASANA, obrando en calidad de transportadora u operador de Servicio de Transportes Especiales en su modalidad escolar y el Contratante <strong>{{$contrato->nombre}} {{$contrato->apellido}}</strong> con NIT <strong>{{$contrato->cedula}}</strong>, Dirección <strong>{{$contrato->direccion}}</strong>, Teléfono <strong>{{$contrato->fijo}}</strong>, obrando en calidad de Contratante del servicio de Transporte Escolar, han decidido celebrar un contrato de Transporte Especial Escolar que se regirá por las siguientes clausulas:
             <br><br>
 
             <strong>PRIMERA. OBJETO:</strong> El operador se obliga con el contratante a transportar a los estudiantes asignados por éste entre su lugar de residencia o lugar determinado por el contratante que cuente con condiciones de acceso seguras para el transportador, los pasajeros y el vehículo, hasta el establecimiento educativo y viceversa.
             <br><br>
- 
+
             <strong>SEGUNDA. PLAZO:</strong> El plazo de este contrato será de 11 meses contados a partir del mes de enero hasta el mes de noviembre o hasta que se convenga por las partes.
             <br><br>
 
@@ -58,7 +58,7 @@
             Parágrafo: ante una eventualidad, este vehículo podrá ser cambiado por otro que cumpla con las normas técnicas y de esto se le dará aviso al contratante mínimo con 5 días de anticipación.
             <br><br>
 
-            <strong>QUINTA. OBLIGACIONES DEL CONTRATANTE:</strong> son obligaciones del contratante: 
+            <strong>QUINTA. OBLIGACIONES DEL CONTRATANTE:</strong> son obligaciones del contratante:
             <br> a). Cancelar la suma pactada, en las fechas y frecuencias en la cuenta de ahorros N° _____________________, del banco ________________________________________________________.
             <br><br>
 
@@ -111,8 +111,8 @@
 
             f. Suministrar y mantener vigentes las pólizas de responsabilidad civil que deben amparar el servicio contratado.
             <div class="page-break"></div><br><br><br><br>
-             
-            g. Cumplir con los recorridos, rutas e itinerarios establecidos por la Institución Educativa, salvo caso fortuito o fuerza mayor. Igualmente, deberá la Empresa, tomar las medidas necesarias para que, en el evento de presentarse inconvenientes técnicos, climáticos o de movilidad, durante el recorrido de alguna de las rutas, ésta se culmine satisfactoriamente, sin que tal hecho constituya responsabilidad adicional a cargo de LOS CONTRATANTES. 
+
+            g. Cumplir con los recorridos, rutas e itinerarios establecidos por la Institución Educativa, salvo caso fortuito o fuerza mayor. Igualmente, deberá la Empresa, tomar las medidas necesarias para que, en el evento de presentarse inconvenientes técnicos, climáticos o de movilidad, durante el recorrido de alguna de las rutas, ésta se culmine satisfactoriamente, sin que tal hecho constituya responsabilidad adicional a cargo de LOS CONTRATANTES.
             <br><br>
 
             h. No podrá transportarse o recoger personas no incluidas en el listado de pasajeros del contrato.
@@ -130,16 +130,16 @@
            <strong>DECIMA: AUTORIZACIÓN PARA LA CELEBRACIÓN DE CONVENIOS DE COLABORACIÓN EMPRESARIAL. </strong> De acuerdo a lo establecido por el Artículo 2.2.1.6.3.4 del Decreto 1079 de 2015, LOS CONTRATANTES emiten expresamente concepto favorable, para que EL OPERADOR , de ser necesario, celebre contratos de colaboración empresarial con otras Empresas de Transporte Terrestre de Pasajeros, en la Modalidad de Servicios Especiales para la ejecución de este contrato.
            <br><br>
 
-           <strong>DÉCIMA PRIMERA: EXCLUSIÓN DE RELACIÓN LABORAL.</strong> Queda claramente entendido que no existirá ningún tipo de relación laboral entre EL OPERADOR  y sus conductores, para con LOS CONTRATANTES o los menores transportados. 
+           <strong>DÉCIMA PRIMERA: EXCLUSIÓN DE RELACIÓN LABORAL.</strong> Queda claramente entendido que no existirá ningún tipo de relación laboral entre EL OPERADOR  y sus conductores, para con LOS CONTRATANTES o los menores transportados.
            <br><br>
 
            <strong>DÉCIMA SEGUNDA: CAUSALES DE TERMINACIÓN. </strong> El presente contrato termina por:
            <br><br>
-           A) Mutuo acuerdo entre las partes. 
+           A) Mutuo acuerdo entre las partes.
            <br><br>
            B) Por disolución y liquidación del OPERADOR, bien sea por decisión de los socios o por decisión de autoridad competente.
            <br><br>
-           C) Por las causales consagradas en el presente contrato o por el incumplimiento de las obligaciones surgidas o emanadas por el presente contrato. 
+           C) Por las causales consagradas en el presente contrato o por el incumplimiento de las obligaciones surgidas o emanadas por el presente contrato.
            <br><br>
            D) Por vencimiento del término del contrato.
            <br><br>
@@ -147,17 +147,17 @@
            <br><br>
            F) Unilateralmente por cualquiera de las partes avisando a la otra con un plazo de por lo menos QUINCE (15) DIAS HÁBILES de anticipación su intención de retirarse.
             <div class="page-break"></div><br><br><br><br>
-           
+
            G) Las demás consagradas por las normas legales.
            <br><br>
 
            <strong>DÉCIMA TERCERA: POLÍTICA DE PROTECCIÓN DE DATOS.</strong><br><br>
-           Los Titulares de datos personales que reposen en las bases de datos del OPERADOR  tienen los siguientes derechos: 
+           Los Titulares de datos personales que reposen en las bases de datos del OPERADOR  tienen los siguientes derechos:
            <br><br>
 
-           A) Derecho a conocer, actualizar y rectificar sus datos personales. 
+           A) Derecho a conocer, actualizar y rectificar sus datos personales.
            <br><br>
-           B) Derecho a solicitar prueba de la autorización: De conformidad con lo previsto en el artículo 9 de la Ley 1.581 de 2013. 
+           B) Derecho a solicitar prueba de la autorización: De conformidad con lo previsto en el artículo 9 de la Ley 1.581 de 2013.
            <br><br>
            C) Derecho a ser informado frente al uso que se le ha dado a sus datos personales.
            <br><br>
@@ -172,7 +172,7 @@
            <strong>DECIMA QUINTA: </strong> base de datos. Teniendo en cuenta las Políticas de tratamiento de datos personales de la Cooperativa, autorizo de manera voluntaria, previa, explícita, informada e inequívoca a la Cooperativa de transportadores San Antonio “Cootrasana” para tratar mis datos personales de acuerdo con esta política y para los fines relacionados con su objeto social y en especial para fines legales, contractuales, comerciales descritos en la misma. La información obtenida para el Tratamiento de mis datos personales la he suministrado de forma voluntaria y es verídica. Acepto lo anterior Firmando este documento.
            <br><br>
 
-           <strong>DECIMA SEXTA: </strong> ASPECTOS CONDICIONADOS O VARIABLES: 
+           <strong>DECIMA SEXTA: </strong> ASPECTOS CONDICIONADOS O VARIABLES:
            <br>
            _________________________________________________________________________
            <br>
@@ -187,7 +187,7 @@
         CONTRATANTE:<br>
         CC:<br>
         NIT:<br>
-        </div>                             
+        </div>
         <div id="columna2">
         GERENTE:<br>
         CC:<br>
@@ -216,7 +216,7 @@
                         <td colspan="5"><strong>NOMBRE COMPLETO</strong></td>
                         <td colspan="4"><strong>DOCUMENTO DE IDENTIDAD</strong></td>
                         <td colspan="1"><strong>T°</strong></td>
-                        
+
                     </tr>
                     <tr>
                     <td colspan="1"><strong></strong></td>
@@ -227,7 +227,7 @@
                         <td colspan="5"><strong></strong></td>
                         <td colspan="4"><strong></strong></td>
                         <td colspan="1"><strong></strong></td>
-                        
+
                     </tr>
                     <tr>
                     <td colspan="1"><strong></strong></td>
@@ -238,7 +238,7 @@
                         <td colspan="5"><strong></strong></td>
                         <td colspan="4"><strong></strong></td>
                         <td colspan="1"><strong></strong></td>
-                        
+
                     </tr> <tr>
                     <td colspan="1"><strong></strong></td>
                         <td colspan="5"><strong></strong></td>
@@ -248,7 +248,7 @@
                         <td colspan="5"><strong></strong></td>
                         <td colspan="4"><strong></strong></td>
                         <td colspan="1"><strong></strong></td>
-                        
+
                     </tr> <tr>
                     <td colspan="1"><strong></strong></td>
                         <td colspan="5"><strong></strong></td>
@@ -268,7 +268,7 @@
                         <td colspan="5"><strong></strong></td>
                         <td colspan="4"><strong></strong></td>
                         <td colspan="1"><strong></strong></td>
-                        
+
                         </tr> <tr>
                     <td colspan="1"><strong></strong></td>
                         <td colspan="5"><strong></strong></td>
@@ -278,7 +278,7 @@
                         <td colspan="5"><strong></strong></td>
                         <td colspan="4"><strong></strong></td>
                         <td colspan="1"><strong></strong></td>
-                        
+
                         </tr> <tr>
                     <td colspan="1"><strong></strong></td>
                         <td colspan="5"><strong></strong></td>
@@ -288,7 +288,7 @@
                         <td colspan="5"><strong></strong></td>
                         <td colspan="4"><strong></strong></td>
                         <td colspan="1"><strong></strong></td>
-                        
+
                         </tr> <tr>
                     <td colspan="1"><strong></strong></td>
                         <td colspan="5"><strong></strong></td>
@@ -298,7 +298,7 @@
                         <td colspan="5"><strong></strong></td>
                         <td colspan="4"><strong></strong></td>
                         <td colspan="1"><strong></strong></td>
-                        
+
                     </tr> <tr>
                     <td colspan="1"><strong></strong></td>
                         <td colspan="5"><strong></strong></td>
@@ -308,7 +308,7 @@
                         <td colspan="5"><strong></strong></td>
                         <td colspan="4"><strong></strong></td>
                         <td colspan="1"><strong></strong></td>
-                        
+
                     </tr> <tr>
                     <td colspan="1"><strong></strong></td>
                         <td colspan="5"><strong></strong></td>
@@ -318,7 +318,7 @@
                         <td colspan="5"><strong></strong></td>
                         <td colspan="4"><strong></strong></td>
                         <td colspan="1"><strong></strong></td>
-                        
+
                     </tr> <tr>
                     <td colspan="1"><strong></strong></td>
                         <td colspan="5"><strong></strong></td>
@@ -328,7 +328,7 @@
                         <td colspan="5"><strong></strong></td>
                         <td colspan="4"><strong></strong></td>
                         <td colspan="1"><strong></strong></td>
-                        
+
                     </tr> <tr>
                     <td colspan="1"><strong></strong></td>
                         <td colspan="5"><strong></strong></td>
@@ -338,7 +338,7 @@
                         <td colspan="5"><strong></strong></td>
                         <td colspan="4"><strong></strong></td>
                         <td colspan="1"><strong></strong></td>
-                        
+
                     </tr> <tr>
                     <td colspan="1"><strong></strong></td>
                         <td colspan="5"><strong></strong></td>
@@ -348,8 +348,8 @@
                         <td colspan="5"><strong></strong></td>
                         <td colspan="4"><strong></strong></td>
                         <td colspan="1"><strong></strong></td>
-                        
-                    </tr> 
+
+                    </tr>
                     <tr>
                     <td colspan="1"><strong></strong></td>
                         <td colspan="5"><strong></strong></td>
@@ -359,8 +359,8 @@
                         <td colspan="5"><strong></strong></td>
                         <td colspan="4"><strong></strong></td>
                         <td colspan="1"><strong></strong></td>
-                        
-                    </tr> 
+
+                    </tr>
                     <tr>
                     <td colspan="1"><strong></strong></td>
                         <td colspan="5"><strong></strong></td>
@@ -370,8 +370,8 @@
                         <td colspan="5"><strong></strong></td>
                         <td colspan="4"><strong></strong></td>
                         <td colspan="1"><strong></strong></td>
-                        
-                    </tr> 
+
+                    </tr>
                     <tr>
                     <td colspan="1"><strong></strong></td>
                         <td colspan="5"><strong></strong></td>
@@ -381,7 +381,7 @@
                         <td colspan="5"><strong></strong></td>
                         <td colspan="4"><strong></strong></td>
                         <td colspan="1"><strong></strong></td>
-                        
+
                     </tr> <tr>
                     <td colspan="1"><strong></strong></td>
                         <td colspan="5"><strong></strong></td>
@@ -391,7 +391,7 @@
                         <td colspan="5"><strong></strong></td>
                         <td colspan="4"><strong></strong></td>
                         <td colspan="1"><strong></strong></td>
-                        
+
                     </tr> <tr>
                     <td colspan="1"><strong></strong></td>
                         <td colspan="5"><strong></strong></td>
@@ -401,7 +401,7 @@
                         <td colspan="5"><strong></strong></td>
                         <td colspan="4"><strong></strong></td>
                         <td colspan="1"><strong></strong></td>
-                        
+
                     </tr> <tr>
                     <td colspan="1"><strong></strong></td>
                         <td colspan="5"><strong></strong></td>
@@ -411,8 +411,8 @@
                         <td colspan="5"><strong></strong></td>
                         <td colspan="4"><strong></strong></td>
                         <td colspan="1"><strong></strong></td>
-                        
-                    </tr> 
+
+                    </tr>
                     <tr>
                     <td colspan="1"><strong></strong></td>
                         <td colspan="5"><strong></strong></td>
@@ -422,8 +422,8 @@
                         <td colspan="5"><strong></strong></td>
                         <td colspan="4"><strong></strong></td>
                         <td colspan="1"><strong></strong></td>
-                        
-                    </tr> 
+
+                    </tr>
                     <tr>
                     <td colspan="1"><strong></strong></td>
                         <td colspan="5"><strong></strong></td>
@@ -433,8 +433,8 @@
                         <td colspan="5"><strong></strong></td>
                         <td colspan="4"><strong></strong></td>
                         <td colspan="1"><strong></strong></td>
-                        
-                    </tr> 
+
+                    </tr>
                     <tr>
                     <td colspan="1"><strong></strong></td>
                         <td colspan="5"><strong></strong></td>
@@ -444,9 +444,9 @@
                         <td colspan="5"><strong></strong></td>
                         <td colspan="4"><strong></strong></td>
                         <td colspan="1"><strong></strong></td>
-                        
-                    </tr> 
-                    
+
+                    </tr>
+
     </div>
 </body>
 </html>
