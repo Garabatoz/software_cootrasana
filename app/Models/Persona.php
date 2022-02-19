@@ -7,6 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Persona extends Model
 {
+    protected $guarded = [];
+
     //!RELACION UNO A UNO
     public function conductor()
     {

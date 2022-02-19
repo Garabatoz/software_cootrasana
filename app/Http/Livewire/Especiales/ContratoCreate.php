@@ -2,23 +2,20 @@
 
 namespace App\Http\Livewire\Especiales;
 
-use App\Models\Conductor;
 use App\Models\Contrato;
 use App\Models\Persona;
 use App\Models\Servicio;
 use App\Models\Vehiculo;
-use Dompdf\Canvas;
 use Livewire\Component;
-use RealRashid\SweetAlert\Facades\Alert;
 use Livewire\WithFileUploads;
+use RealRashid\SweetAlert\Facades\Alert;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 
 class ContratoCreate extends Component
 {
-    use AuthorizesRequests;
-
     //! COMPONENTES
     use WithFileUploads;
+    use AuthorizesRequests;
     //!INFORMACIÓN DEL CONTRATO
     public $fexpedicion,$servicio_id=null,$consecutivo=null;
     //! INFORMACIÓN DEL CLIENTE
@@ -33,7 +30,6 @@ class ContratoCreate extends Component
     public $conductoresContrato = [],$conductoresContratoId = [],$conductor_id = null;
     //! CONSULTAS EN BASE DE DATOS
     public $servicios,$clientes,$vehiculos,$opcion,$conductors;
-
 
     protected $rules =
     [
@@ -57,7 +53,6 @@ class ContratoCreate extends Component
         'observaciones' => 'required',
 
     ];
-
     public function render()
     {
         $this->getInfoClientes();
@@ -70,7 +65,6 @@ class ContratoCreate extends Component
         $this->llenarCombos();
         $this->getfechaExpedicion();
     }
-
     public function updated($propertyName)
     {
         $this->validateOnly($propertyName);

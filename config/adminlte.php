@@ -265,18 +265,25 @@ return [
             'can' => 'administrador',
             'submenu' => [
                 [
-                    'text' => 'Usuarios',
-                    'route'  => 'administrador.usuarios.index',
-                    'icon' => 'far fa-user fa-fw',
-                    'active' => ['administrador/usuarios*'],
-                    'can' => 'administrador.usuarios.index'
-                ],
-                [
                     'text' => 'Roles',
                     'route'  => 'administrador.roles.index',
                     'icon' => 'fas fa-users fa-fw',
                     'active' => ['administrador/roles*'],
                     'can' => 'administrador.roles.index'
+                ],
+                [
+                    'text' => 'Personas',
+                    'route'  => 'administrador.personas.index',
+                    'icon' => 'far fa-user fa-fw',
+                    'active' => ['administrador/personas*'],
+                    //'can' => 'administrador.personas.index'
+                ],
+                [
+                    'text' => 'Usuarios',
+                    'route'  => 'administrador.usuarios.index',
+                    'icon' => 'far fa-user fa-fw',
+                    'active' => ['administrador/usuarios*'],
+                    'can' => 'administrador.usuarios.index'
                 ],
                 /* [
                     'text'    => 'level_one',

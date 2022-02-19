@@ -32,6 +32,12 @@ class RoleSeeder extends Seeder
         ModelsPermission::create(['name' => 'administrador.roles.create','description' => 'Crear roles'])->syncRoles([$role1]);
         ModelsPermission::create(['name' => 'administrador.roles.edit','description' => 'Editar roles'])->syncRoles([$role1]);
         ModelsPermission::create(['name' => 'administrador.roles.destroy','description' => 'Eliminar roles'])->syncRoles([$role1]);
+        //TODOS PERMISOS PARA GESTIÓN DE PERSONAS
+        ModelsPermission::create(['name' => 'administrador.personas.index','description' => 'Ver personas'])->syncRoles([$role1]);
+        ModelsPermission::create(['name' => 'administrador.personas.create','description' => 'Crear personas'])->syncRoles([$role1]);
+        ModelsPermission::create(['name' => 'administrador.personas.edit','description' => 'Editar personas'])->syncRoles([$role1]);
+        ModelsPermission::create(['name' => 'administrador.personas.destroy','description' => 'Eliminar personas'])->syncRoles([$role1]);
+
 
         //!  PERMISOS PARA MODULO DE ESPECIALES
         ModelsPermission::create(['name' => 'especiales','description' => 'Ver menú especiales'])->syncRoles([$role1,$role2]);
