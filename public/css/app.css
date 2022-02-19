@@ -1071,6 +1071,9 @@ select {
 .ml-auto {
   margin-left: auto;
 }
+.mr-1 {
+  margin-right: 0.25rem;
+}
 .-mt-px {
   margin-top: -1px;
 }

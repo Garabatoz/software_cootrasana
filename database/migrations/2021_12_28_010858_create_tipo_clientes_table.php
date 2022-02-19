@@ -16,7 +16,6 @@ class CreateTipoClientesTable extends Migration
         Schema::create('tipo_clientes', function (Blueprint $table) {
             $table->id();
             $table->string('tipoCliente',20);
-            $table->string('slug',45);
             $table->timestamps();
         });
     }
