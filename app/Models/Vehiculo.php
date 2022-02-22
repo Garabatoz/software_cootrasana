@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Vehiculo extends Model
 {
-    protected $guarded=[];
+    protected $guarded = [];
     //!RELACION MUCHOS A MUCHOS
     public function contratos()
     {

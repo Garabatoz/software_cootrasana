@@ -2,11 +2,11 @@
 @section('title', 'Vehiculos')
 
 @section('content_header')
-    <h1>Creación de vehiculos</h1>
+    <h1>Editor de vehiculos</h1>
 @stop
 
 @section('content')
-@livewire('administrador.vehiculo-create')
+@livewire('administrador.vehiculo-edit',['vehiculo'=>$vehiculo])
 @stop
 
 @section('css')
@@ -16,3 +16,5 @@
 @section('js')
     <script> console.log('Hi!'); </script>
 @stop
+
+
