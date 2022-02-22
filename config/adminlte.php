@@ -259,6 +259,13 @@ return [
             'icon' => 'far fa-address-card fa-fw',
             'active' => ['especiales/contratos*']
         ],
+
+        [
+            'text' => 'Vehiculos',
+            'route'  => 'administrador.vehiculos.index',
+            'icon' => 'far fa-address-card fa-fw',
+            'active' => ['administrador/vehiculos*']
+        ],
         /* [
             'text' => 'Pruebas',
             'route'  => 'especiales.pruebas.index',
