@@ -77,11 +77,17 @@ class ContratoController extends Controller
             $pdf = PDF::loadView('especiales.contratos.pdfEmpresarial', ['contrato'=>$contratoImprimir]);
         }
         
-        
         return $pdf->stream();
 
         //return view('especiales.contratos.pdf',compact('contratos'));
     }
+
+    public function generarFuecPdf()
+    {
+        $pdf = PDF::loadView('especiales.contratos.pdfuec');
+        return $pdf->stream();
+    }
+    
 
     /**
      * Show the form for creating a new resource.

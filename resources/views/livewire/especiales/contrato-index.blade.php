@@ -15,7 +15,7 @@
                             <th>Cliente</th>
                             <th>Contrato firmado</th>
                             <th>Contrato</th>
-                            <th colspan="2"></th>
+                            <th colspan="3"></th>
                         </tr>
                     </thead>
                     <tbody>
