@@ -14,8 +14,7 @@
                             <th>Destino</th>
                             <th>Cliente</th>
                             <th>Contrato firmado</th>
-                            <th></th>
-                            <th colspan="2"></th>
+                            <th colspan="3"></th>
                         </tr>
                     </thead>
                     <tbody>

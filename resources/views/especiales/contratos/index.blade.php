@@ -4,6 +4,7 @@
 @section('content_header')
     @can('especiales.contratos.create')
     <a class="btn btn-secondary btn-sm float-right" href="{{route('especiales.contratos.create')}}">Crear contrato</a>
+    <a target="_blank" href="{{ route('especiales.contratos.fuecPdf') }}"><i class="fas fa-lg fa-file-pdf"></i></a>
     <h1>Administración de contratos</h1>
     @endcan
 @stop

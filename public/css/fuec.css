@@ -1,0 +1,99 @@
+.test
+{
+    text-align: center;
+}
+
+    .default{
+        border: 1px solid #ffffff;
+        width: 700px;
+    }
+    td, th {
+        padding: 3px;
+        font-size: 12px;
+        text-align: center;
+    }
+    th {
+        background: #f0e6cc;
+    }
+
+    .default2{
+        border: 1px solid #ffffff;
+        border-collapse: collapse;
+        width: 100%;
+
+    }
+    td, th {
+        padding: 3px;
+        width: 30px;
+        height: 2px;
+        font-size: 12px;
+        text-align: left;
+    }
+    th {
+        background: #f0e6cc;
+    }
+
+    .default3{
+        border: 1px solid #000000;
+        border-collapse: separate;
+        width: 100%;
+        border: 1px solid #595959;
+    }
+    td, th {
+        padding: 3px;
+        width: 30px;
+        height: 15px;
+        font-size: 12px;
+        text-align: left;
+    }
+    .row{
+        border: 1px  solid #595959;
+        text-align: center;
+    }
+   .logo1{
+        width: 690px;
+        height: 40px;
+    }
+
+    .cootra{
+        width: 140px;
+        height: 75px;
+        float: left;
+    }
+
+    .hr{
+        width: 50%;
+        text-decoration-line: overline;
+        margin-left: 48%;
+        
+          }
+
+    .fin{
+        position: relative;
+        top: 2em;
+        text-align:center;
+    }
+
+     /*.logo2{
+        width: 150px;
+        height: 40px;
+    }
+
+    .logo3{
+        width: 60px;
+        height: 40px;
+    }
+
+    .logo4{
+        width: 60px;
+        height: 40px;
+    }
+
+    .logo5{
+        width: 160px;
+        height: 80px;
+        margin:auto;
+        display:block;
+        justify-content: center;
+        }
+    

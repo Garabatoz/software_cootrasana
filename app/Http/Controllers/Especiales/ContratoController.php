@@ -71,13 +71,25 @@ class ContratoController extends Controller
         }
         if($contratoImprimir->servicio == "Empresarial")
         {
-            
+
             $pdf = PDF::loadView('especiales.contratos.pdfEmpresarial', ['contrato'=>$contratoImprimir]);
         }
-        
-        
+
         return $pdf->stream();
     }
+
+    public function generarFuecPdf()
+    {
+        $pdf = PDF::loadView('especiales.contratos.pdfuec');
+        return $pdf->stream();
+    }
+
+
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
     public function create()
     {
         return view('especiales.contratos.create');
