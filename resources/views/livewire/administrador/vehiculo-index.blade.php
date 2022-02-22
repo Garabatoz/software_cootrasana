@@ -17,7 +17,6 @@
                             <th>crtm</th>
                             <th>soat</th>
                             <th>venpreoperacional</th>
-                            <th>slug</th>
                             <th colspan="2"></th>
                         </tr>
                     </thead>
@@ -33,8 +32,7 @@
                                 <td>{{ $vehiculo->vencrtm }}</td>
                                 <td>{{ $vehiculo->vencsoat }}</td>
                                 <td>{{ $vehiculo->vencpreopera}}</td>
-                                <td>{{ $vehiculo->slug}}</td>
-                            
+
                                 <td width="10px"><a href="{{ route('administrador.vehiculos.edit', $vehiculo) }}"
                                         class="btn btn-primary btn-sm">Editar</a></td>
                                 <td width="10px">

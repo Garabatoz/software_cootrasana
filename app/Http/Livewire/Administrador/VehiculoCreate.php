@@ -13,7 +13,7 @@ class VehiculoCreate extends Component
 
 {
     //! Definimos variables para el formulario
-    public $numinterno,$placa,$modelo,$marca,$clase,$tarjetaop,$vencrtm,$vencsoat,$vencpreopera,$slug;
+   public $numinterno,$placa,$modelo,$marca,$clase,$tarjetaop,$vencrtm,$vencsoat,$vencpreopera,$slug;
    public function render()
     {
         return view('livewire.administrador.vehiculo-create');
@@ -29,14 +29,11 @@ class VehiculoCreate extends Component
         'vencrtm' => 'required',
         'vencsoat' => 'required',
         'vencpreopera' => 'required',
-        'slug' => 'required|numeric|digits_between:0,45',
-        
     ];
     public function updated($propertyName)
     {
         $this->validateOnly($propertyName);
     }
-
 
 
     public function store()
@@ -52,14 +49,13 @@ class VehiculoCreate extends Component
             'vencrtm' => $this->vencrtm,
             'vencsoat' => $this->vencsoat,
             'vencpreopera' => $this->vencpreopera,
-            'slug' => $this->slug,
         ]);
 
-     
-        
+
+
         toast('Ha sido creado con exito!','success');
 
         return redirect()->route('administrador.vehiculos.index');
     }
-   
+
 }

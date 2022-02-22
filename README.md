@@ -67,6 +67,20 @@
 -   Se actualiza readme.MD
 -   Terminado edición de personas, clientes, usuarios y conductores. Todos heredan de personas
 
+### generarfuecpdf  (Jefferson-17)
+
+-   Diseño plantilla FUEC en html y css
+
+### crudvehiculos  (Maria0690)
+
+-   Realización del CRUD de vehículos completo
+
+### adecuacionescrudvehiculo  (x7vito7x)
+
+- Se incluye en el menú lateral laopción de vehículo.
+- Se elimina la opción del SLUG del CRUD vehículo
+
+
 ### Observaciones
 
 Los pasos para clonar el proyecto son los siguientes:
@@ -110,3 +124,4 @@ Cada que hagamos un pull deben ejecutar las migraciones:
 
 - X7VITO7X - Administrador repositorio
 - Jefferson-17 - Colaborador desarrollo
+- Maria0690 - Colaborador desarrollo

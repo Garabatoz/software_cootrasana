@@ -253,13 +253,6 @@ return [
             'active' => ['home'],
             'can' => 'home'
         ],
-
-        [
-            'text' => 'Vehiculos',
-            'route'  => 'administrador.vehiculos.index',
-            'icon' => 'far fa-address-card fa-fw',
-            'active' => ['administrador/vehiculos*']
-        ],
         /* [
             'text' => 'Pruebas',
             'route'  => 'especiales.pruebas.index',
@@ -284,6 +277,12 @@ return [
                     'icon' => 'far fa-user fa-fw',
                     'active' => ['administrador/personas*'],
                     'can' => 'administrador.personas.index'
+                ],
+                [
+                    'text' => 'Vehiculos',
+                    'route'  => 'administrador.vehiculos.index',
+                    'icon' => 'far fa-address-card fa-fw',
+                    'active' => ['administrador/vehiculos*']
                 ],
                 /* [
                     'text'    => 'level_one',

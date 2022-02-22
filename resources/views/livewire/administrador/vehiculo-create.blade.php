@@ -83,16 +83,6 @@
                                 <small Style="color: red;font-weight:bold;">*{{$message}}</small>
                             <br>
                         @enderror
-                <div class="form-group">
-                    {!! Form::label('slug', 'slug') !!}
-                    {!! Form::text('slug', null, ['class' => 'form-control', 'style' => 'width:100%;','wire:model' => 'slug']) !!}
-                </div>
-                @error('slug')
-                            <br>
-                                <small Style="color: red;font-weight:bold;">*{{$message}}</small>
-                            <br>
-                        @enderror
-       
                 {!! Form::submit('Crear vehiculo', ['class' => 'btn btn-primary btn-sm','wire:click' => 'store()']) !!}
                 {!! Toastr::message() !!}
             </div>

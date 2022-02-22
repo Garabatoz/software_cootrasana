@@ -11,7 +11,7 @@ use RealRashid\SweetAlert\Facades\Alert;
 class VehiculoEdit extends Component
 {
     public $vehiculo;
-   
+
 
     protected $rules =
     [
@@ -23,21 +23,20 @@ class VehiculoEdit extends Component
         'vehiculo.tarjetaop' => 'required|numeric||digits_between:0,20',
         'vehiculo.vencrtm' => 'required',
         'vehiculo.vencsoat' => 'required',
-        'vehiculo.vencpreopera' => 'required',
-        'vehiculo.slug' => 'required|numeric|digits_between:0,45',
-        
+        'vehiculo.vencpreopera' => 'required'
+
     ];
     public function updated($propertyName)
     {
         $this->validateOnly($propertyName);
     }
-    
+
 
     public function update()
     {
         $this->validate();
         try
-            { 
+            {
                 $this->vehiculo->save();
             }
             catch(Exception $e)
@@ -47,7 +46,7 @@ class VehiculoEdit extends Component
                     return false;
             }
 
-    
+
 
         toast('Ha sido editado con exito!','success');
 

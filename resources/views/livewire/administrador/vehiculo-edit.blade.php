@@ -20,7 +20,7 @@
                                 <small Style="color: red;font-weight:bold;">*{{$message}}</small>
                             <br>
                         @enderror
-               
+
                 <div class="form-group">
                     {!! Form::label('modelo', 'modelo') !!}
                     {!! Form::text('modelo', null, ['class' => 'form-control', 'style' => 'width:100%;','wire:model' => 'vehiculo.modelo']) !!}
@@ -48,7 +48,7 @@
                                 <small Style="color: red;font-weight:bold;">*{{$message}}</small>
                             <br>
                         @enderror
-                
+
                 <div class="form-group">
                     {!! Form::label('tarjetaop', 'Tarjeta Operacional') !!}
                     {!! Form::text('tarjetaop', null, ['class' => 'form-control', 'style' => 'width:100%;','wire:model' => 'vehiculo.tarjetaop']) !!}
@@ -84,16 +84,7 @@
                             <br>
                                 <small Style="color: red;font-weight:bold;">*{{$message}}</small>
                             <br>
-                        @enderror
-                <div class="form-group">
-                    {!! Form::label('slug', 'slug') !!}
-                    {!! Form::text('slug', null, ['class' => 'form-control', 'style' => 'width:100%;','wire:model' => 'vehiculo.slug']) !!}
-                </div>
-                @error('vehiculo.slug')
-                            <br>
-                                <small Style="color: red;font-weight:bold;">*{{$message}}</small>
-                            <br>
-                        @enderror
+             @enderror
                 </div>
             </div>
 
