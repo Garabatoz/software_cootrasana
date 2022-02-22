@@ -14,7 +14,7 @@ class AddPersonaIdToUsersTable extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->unsignedBigInteger('persona_id')->unique()->after('condition');
+            $table->unsignedBigInteger('persona_id')->unique()->after('password');
             $table->foreign('persona_id')->references('id')->on('personas')->onDelete('cascade');
         });
     }

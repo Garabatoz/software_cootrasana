@@ -7,6 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Cliente extends Model
 {
+    const ACTIVO = 1;
+    const INACTIVO =0;
 
     protected $guarded=[];
 

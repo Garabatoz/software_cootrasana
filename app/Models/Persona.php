@@ -7,7 +7,22 @@ use Illuminate\Database\Eloquent\Model;
 
 class Persona extends Model
 {
-    protected $guarded = [];
+    const ACTIVO = 1;
+    const INACTIVO =0;
+
+    protected $fillable = [
+        'cedula',
+        'nombre',
+        'apellido',
+        'fijo',
+        'celular',
+        'direccion',
+        'municipio',
+        'barrio',
+        'email',
+        'fechanac',
+        'status',
+    ];
 
     //!RELACION UNO A UNO
     public function conductor()

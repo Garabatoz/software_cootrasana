@@ -38,10 +38,12 @@ class PersonaCreate extends Component
         'direccion' => 'required|max:50',
         'municipio' => 'required|max:20',
         'barrio' => 'required|max:20',
+        'email' => 'required|email|max:50|unique:personas',
         'fechanac' => 'required'
     ];
     protected $rulesUsuario =
     [
+        'username' => 'required|unique:users',
         'email' => 'required|unique:users',
         'roles' => 'required',
         'password' => 'required',
@@ -57,6 +59,9 @@ class PersonaCreate extends Component
         'fechanac' => 'fecha de nacimiento',
         'username' => 'nombre de usuario',
         'password' => 'contraseña',
+        'nrolicencia' => 'licencia',
+        'fvencimiento' => 'fecha de vencimiento',
+        'fingreso' => 'fecha de ingreso',
     ];
     protected $messages = [
         'cedula.max' => 'La cédula no puede tener mas de 10 números.',
@@ -138,7 +143,8 @@ class PersonaCreate extends Component
                 'municipio' => $this->municipio,
                 'barrio' => $this->barrio,
                 'fechanac' => $this->fechanac,
-                'email' => $this->email
+                'email' => $this->email,
+                'status' => '1',
             ]);
         }
         catch(Exception $e)
@@ -155,12 +161,13 @@ class PersonaCreate extends Component
                 ([
                     'name' => $this->nombre.' '.$this->apellido,
                     'email' => $this->email,
-                    'condition' => '1',
+                    'status' => '1',
                     'username' => $this->username,
                     'persona_id' => $persona->id,
                     'password' => bcrypt($this->password)
                 ]);
                 $usuario->roles()->sync($this->roles);
+
             }catch(Exception $e)
             {
                 $persona->delete();
@@ -180,6 +187,7 @@ class PersonaCreate extends Component
                     'nrolicencia' => $this->nrolicencia,
                     'fvencimiento' => $this->fvencimiento,
                     'fingreso' => $this->fingreso,
+                    'status' => '1',
                     'persona_id' => $persona->id
                 ]);
             }

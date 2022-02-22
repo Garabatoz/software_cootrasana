@@ -20,16 +20,15 @@ class User extends Authenticatable
     use TwoFactorAuthenticatable;
     use HasRoles;
 
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var string[]
-     */
+    //STATUS
+    const ACTIVO = 1;
+    const INACTIVO =0;
+
     protected $fillable = [
         'name',
         'email',
         'username',
-        'condition',
+        'status',
         'persona_id',
         'password',
     ];

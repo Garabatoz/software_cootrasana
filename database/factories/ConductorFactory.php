@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Conductor;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
 
@@ -20,6 +21,7 @@ class ConductorFactory extends Factory
             'nrolicencia' => $numlicencia,
             'fvencimiento' => $this->faker->date(),
             'fingreso' => $this->faker->date(),
+            'status' => $this->faker->randomElement([Conductor::ACTIVO,Conductor::INACTIVO]),
             'persona_id' => $persona_id_conductor
         ];
     }

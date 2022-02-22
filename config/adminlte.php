@@ -276,14 +276,7 @@ return [
                     'route'  => 'administrador.personas.index',
                     'icon' => 'far fa-user fa-fw',
                     'active' => ['administrador/personas*'],
-                    //'can' => 'administrador.personas.index'
-                ],
-                [
-                    'text' => 'Usuarios',
-                    'route'  => 'administrador.usuarios.index',
-                    'icon' => 'far fa-user fa-fw',
-                    'active' => ['administrador/usuarios*'],
-                    'can' => 'administrador.usuarios.index'
+                    'can' => 'administrador.personas.index'
                 ],
                 /* [
                     'text'    => 'level_one',

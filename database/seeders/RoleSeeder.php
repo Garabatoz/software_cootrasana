@@ -18,6 +18,7 @@ class RoleSeeder extends Seeder
     {
         $role1 = Role::create(['name' => 'Administrador']);
         $role2 = Role::create(['name' => 'Especiales']);
+        $role2 = Role::create(['name' => 'Usuario inactivo']);
 
         ModelsPermission::create(['name' => 'home','description' => 'Ver el dashboard'])->syncRoles([$role1,$role2]);
         //!  PERMISOS PARA MODULO DE ADMINISTRACION
@@ -38,9 +39,9 @@ class RoleSeeder extends Seeder
         ModelsPermission::create(['name' => 'administrador.personas.edit','description' => 'Editar personas'])->syncRoles([$role1]);
         ModelsPermission::create(['name' => 'administrador.personas.destroy','description' => 'Eliminar personas'])->syncRoles([$role1]);
         // TODOS PERMISOS PARA LA CREACIÓN DE LOS DIFERENTES ROLES
-        ModelsPermission::create(['name' => 'administrador.personas.createCliente','description' => 'Crear clientes'])->syncRoles([$role1]);
-        ModelsPermission::create(['name' => 'administrador.personas.createUsuario','description' => 'Crear Usuarios'])->syncRoles([$role1]);
-        ModelsPermission::create(['name' => 'administrador.personas.createConductor','description' => 'Crear Conductores'])->syncRoles([$role1]);
+        ModelsPermission::create(['name' => 'administrador.personas.createCliente','description' => 'Gestionar clientes'])->syncRoles([$role1]);
+        ModelsPermission::create(['name' => 'administrador.personas.createUsuario','description' => 'Gestionar usuarios'])->syncRoles([$role1]);
+        ModelsPermission::create(['name' => 'administrador.personas.createConductor','description' => 'Gestionar conductores'])->syncRoles([$role1]);
 
         //!  PERMISOS PARA MODULO DE ESPECIALES
         ModelsPermission::create(['name' => 'especiales','description' => 'Ver menú especiales'])->syncRoles([$role1,$role2]);

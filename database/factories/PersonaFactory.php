@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Persona;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
 
@@ -25,7 +26,8 @@ class PersonaFactory extends Factory
             'municipio' => $this->faker->word(),
             'barrio' => $this->faker->word(),
             'fechanac' => $this->faker->date(),
-            'email' => $this->faker->word()
+            'email' => $this->faker->word(),
+            'status' => $this->faker->randomElement([Persona::ACTIVO,Persona::INACTIVO]),
         ];
     }
 }

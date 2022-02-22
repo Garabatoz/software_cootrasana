@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Administrador;
 
 use App\Http\Controllers\Controller;
+use App\Models\Persona;
 use Illuminate\Http\Request;
 
 class PersonaController extends Controller
@@ -32,9 +33,9 @@ class PersonaController extends Controller
         //
     }
 
-    public function edit($id)
+    public function edit(Persona $persona)
     {
-        //
+        return view('administrador.personas.edit',compact('persona'));
     }
 
     public function update(Request $request, $id)

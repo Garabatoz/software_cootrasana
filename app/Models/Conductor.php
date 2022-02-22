@@ -7,6 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Conductor extends Model
 {
+    const ACTIVO = 1;
+    const INACTIVO =0;
+
     protected $guarded=[];
     //!RELACION UNO A UNO
     public function persona()

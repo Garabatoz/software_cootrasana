@@ -25,7 +25,7 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
 
-        //Storage::deleteDirectory('pasajeros_contratos');
+        Storage::deleteDirectory('pasajeros_contratos');
         Storage::makeDirectory('pasajeros_contratos');
         Persona::factory(10)->create();
         Vehiculo::factory(10)->create();

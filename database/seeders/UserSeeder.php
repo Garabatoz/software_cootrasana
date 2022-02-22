@@ -21,7 +21,7 @@ class UserSeeder extends Seeder
             'name' => 'Edison Andres Leon',
             'email' => 'andresleon90s@gmail.com',
             'username' => 'admin',
-            'condition' => 1,
+            'status' => 1,
             'password' => bcrypt('123'),
             'persona_id' => 1,
         ])->assignRole('Administrador');

@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Cliente;
 use App\Models\TipoCliente;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;

@@ -1,7 +1,7 @@
 <div>
     <div class="card">
         <div class="card-header">
-            <h5>Seleccione el rol de la persona</h5>
+            <h5>Seleccione los roles que desea editar</h5>
         </div>
         <div class="card-body">
             @can('administrador.personas.createCliente')
@@ -98,13 +98,11 @@
             </div>
             @error('barrio')
                 <small  Style="color: red;font-weight:bold;">*{{$message}}</small>
-            <br>
             @enderror
             <div class="form-group">
                 {!! Form::label('fechanac', 'Fecha de nacimiento') !!}
                 {!! Form::date('fechanac', null, ['class' => 'form-control', 'style' => 'width:100%;','wire:model' => 'fechanac']) !!}
             </div>
-
             @error('fechanac')
                 <small  Style="color: red;font-weight:bold;">*{{$message}}</small>
             <br>
@@ -149,6 +147,10 @@
                 <small  Style="color: red;font-weight:bold;">*{{$message}}</small>
             <br>
             @enderror
+            <label>
+                {{Form::checkbox('statusConductor','0',null,['class' => 'mr-1','wire:model' => 'statusConductor'])}}
+                Conductor desactivado
+            </label>
         </div>
     </div>
     @endif
@@ -175,6 +177,8 @@
             <br>
             @enderror
             <h2 class="h5">Asignar rol</h2>
+
+
                 @foreach ($listaRoles as $role)
                     <div>
                         <label>
@@ -191,8 +195,9 @@
     </div>
     @endif
     <div>
-        {!! Form::submit('Crear persona', ['class' => 'btn btn-primary','wire:click' => 'store()']) !!}
+        {!! Form::submit('Editar persona', ['class' => 'btn btn-primary','wire:click' => 'update()']) !!}
         {!! Toastr::message() !!}
+
         <br>
         <br>
     </div>

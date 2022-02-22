@@ -18,6 +18,7 @@ class CreateConductorsTable extends Migration
             $table->string('nrolicencia',20);
             $table->date('fvencimiento');
             $table->date('fingreso');
+            $table->string('status');
             $table->unsignedBigInteger('persona_id')->unique();
             $table->foreign('persona_id')->references('id')->on('personas')->onDelete('cascade');
             $table->timestamps();
