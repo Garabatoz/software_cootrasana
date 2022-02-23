@@ -21,7 +21,7 @@ class VehiculoCreate extends Component
     protected $rules =
     [
         'numinterno' => 'required|numeric|digits_between:0,4',
-        'placa' => 'required|numeric|digits_between:0,6',
+        'placa' =>  'required|min:0|max:6',
         'modelo' => 'required|numeric|digits_between:0,4',
         'marca' => 'required|alpha|min:0|max:20',
         'clase' => 'required|alpha|min:0|max:20',
@@ -30,12 +30,35 @@ class VehiculoCreate extends Component
         'vencsoat' => 'required',
         'vencpreopera' => 'required',
     ];
+    protected $validationAttributes = [
+        'numinterno' => 'vehiculo',
+        'placa' => 'placa',
+        'modelo' => 'modelo',
+        'marca' => 'marca',
+        'clase' => 'clase',
+        'tarjetaop' => 'tarjeta de operación',
+        'vencrtm' => 'revisión tecnico mecanica',
+        'vencsoat' => 'soat',
+        'vencpreopera' => 'preoperacional'
+    ];
     public function updated($propertyName)
     {
         $this->validateOnly($propertyName);
     }
-
-
+    public function update()
+    {
+        $this->validate();
+        try
+            {
+                $this->vehiculo->save();
+            }
+            catch(Exception $e)
+            {
+                $this->dispatchBrowserEvent('alert',
+                    ['type' => 'error',  'message' => 'Ocurrio un error'.$e]);
+                    return false;
+            }
+        }
     public function store()
     {
         Vehiculo::create

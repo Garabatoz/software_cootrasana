@@ -16,7 +16,7 @@ class VehiculoEdit extends Component
     protected $rules =
     [
         'vehiculo.numinterno' => 'required|numeric|digits_between:0,4',
-        'vehiculo.placa' => 'required|numeric|digits_between:0,6',
+        'vehiculo.placa' => 'required|min:0|max:6',
         'vehiculo.modelo' => 'required|numeric|digits_between:0,4',
         'vehiculo.marca' => 'required|alpha|min:0|max:20',
         'vehiculo.clase' => 'required|alpha|min:0|max:20',
@@ -25,6 +25,17 @@ class VehiculoEdit extends Component
         'vehiculo.vencsoat' => 'required',
         'vehiculo.vencpreopera' => 'required'
 
+    ];
+    protected $validationAttributes = [
+        'vehiculo.numinterno' => 'vehiculo',
+        'vehiculo.placa' => 'placa',
+        'vehiculo.modelo' => 'modelo',
+        'vehiculo.marca' => 'marca',
+        'vehiculo.clase' => 'clase',
+        'vehiculo.tarjetaop' => 'tarjeta de operación',
+        'vehiculo.vencrtm' => 'revisión tecnico mecanica',
+        'vehiculo.vencsoat' => 'soat',
+        'vehiculo.vencpreopera' => 'preoperacional'
     ];
     public function updated($propertyName)
     {

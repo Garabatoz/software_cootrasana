@@ -3,7 +3,7 @@
         <div class="card">
             <div class="card-body">
                 <div class="form-group">
-                    {!! Form::label('numinterno', 'numero interno') !!}
+                    {!! Form::label('numinterno', 'Vehiculo') !!}
                     {!! Form::text('numinterno', null, ['class' => 'form-control', 'style' => 'width:100%;','wire:model' => 'numinterno']) !!}
                 </div>
                 @error('numinterno')
@@ -12,7 +12,7 @@
                             <br>
                         @enderror
                 <div class="form-group">
-                    {!! Form::label('placa', 'placa') !!}
+                    {!! Form::label('placa', 'Placa') !!}
                     {!! Form::text('placa', null, ['class' => 'form-control', 'style' => 'width:100%;','wire:model' => 'placa']) !!}
                 </div>
                 @error('placa')
@@ -21,7 +21,7 @@
                             <br>
                         @enderror
                 <div class="form-group">
-                    {!! Form::label('modelo', 'modelo') !!}
+                    {!! Form::label('modelo', 'Modelo') !!}
                     {!! Form::text('modelo', null, ['class' => 'form-control', 'style' => 'width:100%;','wire:model' => 'modelo']) !!}
                 </div>
                 @error('modelo')
@@ -30,7 +30,7 @@
                             <br>
                         @enderror
                 <div class="form-group">
-                    {!! Form::label('marca', 'marca') !!}
+                    {!! Form::label('marca', 'Marca') !!}
                     {!! Form::text('marca', null, ['class' => 'form-control', 'style' => 'width:100%;','wire:model' => 'marca']) !!}
                 </div>
                 @error('marca')
@@ -39,7 +39,7 @@
                             <br>
                         @enderror
                 <div class="form-group">
-                    {!! Form::label('clase', 'clase') !!}
+                    {!! Form::label('clase', 'Clase') !!}
                     {!! Form::text('clase', null, ['class' => 'form-control', 'style' => 'width:100%;','wire:model' => 'clase']) !!}
                 </div>
                 @error('clase')
@@ -48,7 +48,7 @@
                             <br>
                         @enderror
                 <div class="form-group">
-                    {!! Form::label('tarjetaop', 'tarjetaop') !!}
+                    {!! Form::label('tarjetaop', 'Tarjeta de operación') !!}
                     {!! Form::text('tarjetaop', null, ['class' => 'form-control', 'style' => 'width:100%;','wire:model' => 'tarjetaop']) !!}
                 </div>
                 @error('tarjetaop')
@@ -57,7 +57,7 @@
                             <br>
                         @enderror
                 <div class="form-group">
-                    {!! Form::label('vencrtm', 'vencrtm') !!}
+                    {!! Form::label('vencrtm', 'Revisión tecnico mecanica') !!}
                     {!! Form::date('vencrtm', null, ['class' => 'form-control', 'style' => 'width:100%;','wire:model' => 'vencrtm']) !!}
                 </div>
                 @error('vencrtm')
@@ -66,7 +66,7 @@
                             <br>
                         @enderror
                 <div class="form-group">
-                    {!! Form::label('vencsoat', 'vencsoat') !!}
+                    {!! Form::label('vencsoat', 'Soat') !!}
                     {!! Form::date('vencsoat', null, ['class' => 'form-control', 'style' => 'width:100%;','wire:model' => 'vencsoat']) !!}
                 </div>
                 @error('vencsoat')
@@ -75,7 +75,7 @@
                             <br>
                         @enderror
                 <div class="form-group">
-                    {!! Form::label('vencpreopera', 'vencpreopera') !!}
+                    {!! Form::label('vencpreopera', 'Preoperacional') !!}
                     {!! Form::date('vencpreopera', null, ['class' => 'form-control', 'style' => 'width:100%;','wire:model' => 'vencpreopera']) !!}
                 </div>
                 @error('vencpreopera')

@@ -8,15 +8,14 @@
                 <table class="table table-striped">
                     <thead>
                         <tr>
-                            <th>Numero interno</th>
+                            <th>Vehiculo</th>
                             <th>Placa</th>
                             <th>Modelo</th>
                             <th>Marca</th>
-                            <th>Clase</th>
-                            <th>Tarjeta operacional</th>
-                            <th>crtm</th>
+                            <th>Tarjeta operación</th>
+                            <th>Tecnico mecanica</th>
                             <th>soat</th>
-                            <th>venpreoperacional</th>
+                            <th>Preoperacional</th>
                             <th colspan="2"></th>
                         </tr>
                     </thead>
@@ -27,7 +26,6 @@
                                 <td>{{ $vehiculo->placa }}</td>
                                 <td>{{ $vehiculo-> modelo }}</td>
                                 <td>{{ $vehiculo->marca }}</td>
-                                <td>{{ $vehiculo->clase }}</td>
                                 <td>{{ $vehiculo->tarjetaop}}</td>
                                 <td>{{ $vehiculo->vencrtm }}</td>
                                 <td>{{ $vehiculo->vencsoat }}</td>

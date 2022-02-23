@@ -3,67 +3,60 @@
         <div class="card">
             <div class="card-body">
                 <div class="form-group">
-                    {!! Form::label('numinterno', 'Numero interno') !!}
+                    {!! Form::label('numinterno', 'Vehiculo') !!}
                     {!! Form::text('numinterno', null, ['class' => 'form-control', 'style' => 'width:100%;','wire:model' => 'vehiculo.numinterno']) !!}
                 </div>
                 @error('vehiculo.numinterno')
-                            <br>
                                 <small Style="color: red;font-weight:bold;">*{{$message}}</small>
                             <br>
                         @enderror
                 <div class="form-group">
-                    {!! Form::label('placa', 'placa') !!}
+                    {!! Form::label('placa', 'Placa') !!}
                     {!! Form::text('placa', null, ['class' => 'form-control', 'style' => 'width:100%;','wire:model' => 'vehiculo.placa']) !!}
                 </div>
                 @error('vehiculo.placa')
-                            <br>
                                 <small Style="color: red;font-weight:bold;">*{{$message}}</small>
                             <br>
                         @enderror
 
                 <div class="form-group">
-                    {!! Form::label('modelo', 'modelo') !!}
+                    {!! Form::label('modelo', 'Modelo') !!}
                     {!! Form::text('modelo', null, ['class' => 'form-control', 'style' => 'width:100%;','wire:model' => 'vehiculo.modelo']) !!}
                 </div>
                 @error('vehiculo.modelo')
-                            <br>
                                 <small Style="color: red;font-weight:bold;">*{{$message}}</small>
                             <br>
                         @enderror
                 <div class="form-group">
-                    {!! Form::label('marca', 'marca') !!}
+                    {!! Form::label('marca', 'Marca') !!}
                     {!! Form::text('marca', null, ['class' => 'form-control', 'style' => 'width:100%;','wire:model' => 'vehiculo.marca']) !!}
                 </div>
                 @error('vehiculo.marca')
-                            <br>
                                 <small Style="color: red;font-weight:bold;">*{{$message}}</small>
                             <br>
                         @enderror
                 <div class="form-group">
-                    {!! Form::label('clase', 'clase') !!}
+                    {!! Form::label('clase', 'Clase') !!}
                     {!! Form::text('clase', null, ['class' => 'form-control', 'style' => 'width:100%;','wire:model' => 'vehiculo.clase']) !!}
                 </div>
                 @error('vehiculo.clase')
-                            <br>
                                 <small Style="color: red;font-weight:bold;">*{{$message}}</small>
                             <br>
                         @enderror
 
                 <div class="form-group">
-                    {!! Form::label('tarjetaop', 'Tarjeta Operacional') !!}
+                    {!! Form::label('tarjetaop', 'Tarjeta de Operación') !!}
                     {!! Form::text('tarjetaop', null, ['class' => 'form-control', 'style' => 'width:100%;','wire:model' => 'vehiculo.tarjetaop']) !!}
                 </div>
                 @error('vehiculo.tarjetaop')
-                            <br>
                                 <small Style="color: red;font-weight:bold;">*{{$message}}</small>
                             <br>
                         @enderror
                 <div class="form-group">
-                    {!! Form::label('vencrtm', 'crtm') !!}
+                    {!! Form::label('vencrtm', 'Revisión tecnico mecanica') !!}
                     {!! Form::date('vencrtm', null, ['class' => 'form-control', 'style' => 'width:100%;','wire:model' => 'vehiculo.vencrtm']) !!}
                 </div>
                 @error('vehiculo.vencrtm')
-                            <br>
                                 <small Style="color: red;font-weight:bold;">*{{$message}}</small>
                             <br>
                         @enderror
@@ -72,16 +65,14 @@
                     {!! Form::date('vencsoat', null, ['class' => 'form-control', 'style' => 'width:100%;','wire:model' => 'vehiculo.vencsoat']) !!}
                 </div>
                 @error('vehiculo.vencsoat')
-                            <br>
                                 <small Style="color: red;font-weight:bold;">*{{$message}}</small>
                             <br>
                         @enderror
                 <div class="form-group">
-                    {!! Form::label('vencpreopera', 'vencpreoperacional') !!}
+                    {!! Form::label('vencpreopera', 'Preoperacional') !!}
                     {!! Form::date('vencpreopera', null, ['class' => 'form-control', 'style' => 'width:100%;','wire:model' => 'vehiculo.vencpreopera']) !!}
                 </div>
                 @error('vehiculo.vencpreopera')
-                            <br>
                                 <small Style="color: red;font-weight:bold;">*{{$message}}</small>
                             <br>
              @enderror
