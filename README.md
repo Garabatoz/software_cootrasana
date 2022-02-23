@@ -79,7 +79,9 @@
 
 - Se incluye en el menú lateral laopción de vehículo.
 - Se elimina la opción del SLUG del CRUD vehículo
+### estadousuario  (x7vito7x)
 
+- Se corrige el estado de usuario inactivo
 
 ### Observaciones
 
