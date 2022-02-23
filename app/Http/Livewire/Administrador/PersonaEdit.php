@@ -193,6 +193,7 @@ class PersonaEdit extends Component
                         $usuario->name  = $this->nombre.''.$this->apellido;
                         $usuario->email = $this->email;
                         $usuario->username = $this->username;
+
                         if($this->password == null)
                         {
                             $usuario->password = $usuario->password;
@@ -201,7 +202,8 @@ class PersonaEdit extends Component
                         {
                             $usuario->password = bcrypt($this->password);
                         }
-                        if($this->roles[0]=='4')
+                        //dd($this->roles);
+                        if($this->roles[0]=='1')
                         {
                         $usuario->status = '0';
                         }
@@ -317,7 +319,6 @@ class PersonaEdit extends Component
             {
                 $this->roles[] = $rol->id;
             }
-
         }
         if(is_object($cliente))
         {
