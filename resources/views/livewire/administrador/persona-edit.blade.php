@@ -176,6 +176,10 @@
                 <small  Style="color: red;font-weight:bold;">*{{$message}}</small>
             <br>
             @enderror
+            <label>
+                {{Form::checkbox('statusUsuario','0',null,['class' => 'mr-1','wire:model' => 'statusUsuario'])}}
+                Usuario desactivado
+            </label>
             <h2 class="h5">Asignar rol</h2>
 
 
@@ -187,10 +191,6 @@
                         </label>
                     </div>
                 @endforeach
-                @error('roles')
-                <small  Style="color: red;font-weight:bold;">*{{$message}}</small>
-            <br>
-            @enderror
         </div>
     </div>
     @endif

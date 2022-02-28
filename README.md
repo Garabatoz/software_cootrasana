@@ -82,6 +82,7 @@
 ### estadousuario  (x7vito7x)
 
 - Se corrige el estado de usuario inactivo
+- Se optimiza la activación y desactivación de usuarios.
 
 ### Observaciones
 

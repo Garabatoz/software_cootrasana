@@ -9,7 +9,6 @@ use App\Models\User;
 use Exception;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Support\Arr;
-use Illuminate\Validation\Rule;
 use Livewire\Component;
 use Livewire\WithFileUploads;
 use Spatie\Permission\Models\Role;
@@ -26,7 +25,7 @@ class PersonaEdit extends Component
     //! INFORMACIÓN DE CONDUCTORES
     public $idConductor,$nrolicencia,$fvencimiento,$fingreso,$statusConductor;
     //! INFORMACIÓN DE USUARIOS
-    public $idUsuario,$username,$password;
+    public $idUsuario,$username,$password,$statusUsuario;
     //! INFORMACIÓN DE CLIENTES
     public $idCliente;
     //! CONTROL DE VALIDACIONES
@@ -52,8 +51,7 @@ class PersonaEdit extends Component
             $rulesUsuario =
             [
                 'username' => 'required|unique:users,username,'.$this->idUsuario,
-                'email' => 'required|unique:users,email,'.$this->idUsuario,
-                'roles' => 'required'
+                'email' => 'required|unique:users,email,'.$this->idUsuario
             ];
             return $rulesUsuario;
         }
@@ -87,8 +85,6 @@ class PersonaEdit extends Component
         'email.unique' => 'Este correo electrónico ya está registrado.',
 
         'username.unique' => 'Este nombre de usuario ya existe.',
-
-        'roles.required' => 'Debe elegir por lo menos un rol para este usuario.',
 
 
     ];
@@ -202,14 +198,13 @@ class PersonaEdit extends Component
                         {
                             $usuario->password = bcrypt($this->password);
                         }
-                        //dd($this->roles);
-                        if($this->roles[0]=='1')
+                        if($this->statusUsuario == null)
                         {
-                        $usuario->status = '0';
+                            $usuario->status = 1;
                         }
-                        else
+                        elseif($this->statusUsuario == '0')
                         {
-                            $usuario->status = '1';
+                            $usuario->status = 0;
                         }
                         $usuario->persona_id = $this->persona->id;
                         $usuario->save();
@@ -318,6 +313,14 @@ class PersonaEdit extends Component
             foreach($user->roles as $rol)
             {
                 $this->roles[] = $rol->id;
+            }
+            if($user->status == 0)
+            {
+                $this->statusUsuario= '0';
+            }
+            elseif($user->status == 1)
+            {
+                $this->statusUsuario = null;
             }
         }
         if(is_object($cliente))
