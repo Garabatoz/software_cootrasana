@@ -24,7 +24,7 @@
                                 <td>{{ $contrato->servicio }}</td>
                                 <td>{{ $contrato->origen }}</td>
                                 <td>{{ $contrato->destino }}</td>
-                                <td>{{ $contrato->nombre }}</td>
+                                <td>{{ $contrato->nombre }} {{ $contrato->apellido }}</td>
                                 <td>{{ $contrato->contratofirmado }}</td>
                                 <td>
                                     @can('especiales.contratos.generarContratoPdf')

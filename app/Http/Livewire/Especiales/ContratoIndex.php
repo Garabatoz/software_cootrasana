@@ -31,6 +31,7 @@ class ContratoIndex extends Component
                 'contratos.destino',
                 'contratos.contratofirmado',
                 'personas.nombre',
+                'personas.apellido',
                 'servicios.servicio'
             )->
             where('consecutivo','LIKE','%'.$this->search.'%')->

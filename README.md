@@ -84,6 +84,24 @@
 - Se corrige el estado de usuario inactivo
 - Se optimiza la activación y desactivación de usuarios.
 
+### variablesdecontrato  (x7vito7x)
+
+- Se verifican las variables de los contratos y se generan cuestionamientos para el cliente.
+- Contrato Escolar: <br> -> ¿El nombre de colegio sería el nombre del cliente?
+<br> -> ¿El origen y destino de un contrato escolar como se maneja?
+<br> -> ¿Se colocan todos los vehículos del contrato? Tipología Vehícular
+<br> -> ¿Cuál es la cuenta de ahorro en la cuál se consigna?
+<br> -> ¿Cuál es la cuenta de ahorro en la cuál se consigna?
+- Contrato Empresarial: 
+<br> -> ¿El representante legal y el responsable en un contrato empresarial son diferentes?
+<br> -> ¿El origen y destino de un contrato escolar como se maneja?
+- Contrato Ocasional: 
+<br> -> Las formas de pago de los contratos
+(Esta sección esta sujeta a respuestas y revisión por parte del cliente)
+
+
+
+
 ### Observaciones
 
 Los pasos para clonar el proyecto son los siguientes:

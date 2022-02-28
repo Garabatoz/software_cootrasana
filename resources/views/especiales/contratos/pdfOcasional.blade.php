@@ -107,7 +107,7 @@
         CONTRATANTE:<br>
         CC:<br>
         NIT:<br>
-        </div>                             
+        </div>
         <div id="columna2">
         GERENTE:<br>
         CC:<br>
@@ -121,7 +121,7 @@
 </div>
 
 
-    
+
     <div class="page-break"></div><br><br><br><br>
     <table>
                 <tbody>
@@ -137,7 +137,7 @@
                         <td colspan="5"><strong>NOMBRE COMPLETO</strong></td>
                         <td colspan="4"><strong>DOCUMENTO DE IDENTIDAD</strong></td>
                         <td colspan="1"><strong>T°</strong></td>
-                        
+
                     </tr>
                     <tr>
                     <td colspan="1"><strong></strong></td>
@@ -148,7 +148,7 @@
                         <td colspan="5"><strong></strong></td>
                         <td colspan="4"><strong></strong></td>
                         <td colspan="1"><strong></strong></td>
-                        
+
                     </tr>
                     <tr>
                     <td colspan="1"><strong></strong></td>
@@ -159,7 +159,7 @@
                         <td colspan="5"><strong></strong></td>
                         <td colspan="4"><strong></strong></td>
                         <td colspan="1"><strong></strong></td>
-                        
+
                     </tr> <tr>
                     <td colspan="1"><strong></strong></td>
                         <td colspan="5"><strong></strong></td>
@@ -169,7 +169,7 @@
                         <td colspan="5"><strong></strong></td>
                         <td colspan="4"><strong></strong></td>
                         <td colspan="1"><strong></strong></td>
-                        
+
                     </tr> <tr>
                     <td colspan="1"><strong></strong></td>
                         <td colspan="5"><strong></strong></td>
@@ -189,7 +189,7 @@
                         <td colspan="5"><strong></strong></td>
                         <td colspan="4"><strong></strong></td>
                         <td colspan="1"><strong></strong></td>
-                        
+
                         </tr> <tr>
                     <td colspan="1"><strong></strong></td>
                         <td colspan="5"><strong></strong></td>
@@ -199,7 +199,7 @@
                         <td colspan="5"><strong></strong></td>
                         <td colspan="4"><strong></strong></td>
                         <td colspan="1"><strong></strong></td>
-                        
+
                         </tr> <tr>
                     <td colspan="1"><strong></strong></td>
                         <td colspan="5"><strong></strong></td>
@@ -209,7 +209,7 @@
                         <td colspan="5"><strong></strong></td>
                         <td colspan="4"><strong></strong></td>
                         <td colspan="1"><strong></strong></td>
-                        
+
                         </tr> <tr>
                     <td colspan="1"><strong></strong></td>
                         <td colspan="5"><strong></strong></td>
@@ -219,7 +219,7 @@
                         <td colspan="5"><strong></strong></td>
                         <td colspan="4"><strong></strong></td>
                         <td colspan="1"><strong></strong></td>
-                        
+
                     </tr> <tr>
                     <td colspan="1"><strong></strong></td>
                         <td colspan="5"><strong></strong></td>
@@ -229,7 +229,7 @@
                         <td colspan="5"><strong></strong></td>
                         <td colspan="4"><strong></strong></td>
                         <td colspan="1"><strong></strong></td>
-                        
+
                     </tr> <tr>
                     <td colspan="1"><strong></strong></td>
                         <td colspan="5"><strong></strong></td>
@@ -239,7 +239,7 @@
                         <td colspan="5"><strong></strong></td>
                         <td colspan="4"><strong></strong></td>
                         <td colspan="1"><strong></strong></td>
-                        
+
                     </tr> <tr>
                     <td colspan="1"><strong></strong></td>
                         <td colspan="5"><strong></strong></td>
@@ -249,7 +249,7 @@
                         <td colspan="5"><strong></strong></td>
                         <td colspan="4"><strong></strong></td>
                         <td colspan="1"><strong></strong></td>
-                        
+
                     </tr> <tr>
                     <td colspan="1"><strong></strong></td>
                         <td colspan="5"><strong></strong></td>
@@ -259,7 +259,7 @@
                         <td colspan="5"><strong></strong></td>
                         <td colspan="4"><strong></strong></td>
                         <td colspan="1"><strong></strong></td>
-                        
+
                     </tr> <tr>
                     <td colspan="1"><strong></strong></td>
                         <td colspan="5"><strong></strong></td>
@@ -269,8 +269,8 @@
                         <td colspan="5"><strong></strong></td>
                         <td colspan="4"><strong></strong></td>
                         <td colspan="1"><strong></strong></td>
-                        
-                    </tr> 
+
+                    </tr>
                     <tr>
                     <td colspan="1"><strong></strong></td>
                         <td colspan="5"><strong></strong></td>
@@ -280,8 +280,8 @@
                         <td colspan="5"><strong></strong></td>
                         <td colspan="4"><strong></strong></td>
                         <td colspan="1"><strong></strong></td>
-                        
-                    </tr> 
+
+                    </tr>
                     <tr>
                     <td colspan="1"><strong></strong></td>
                         <td colspan="5"><strong></strong></td>
@@ -291,8 +291,8 @@
                         <td colspan="5"><strong></strong></td>
                         <td colspan="4"><strong></strong></td>
                         <td colspan="1"><strong></strong></td>
-                        
-                    </tr> 
+
+                    </tr>
                     <tr>
                     <td colspan="1"><strong></strong></td>
                         <td colspan="5"><strong></strong></td>
@@ -302,7 +302,7 @@
                         <td colspan="5"><strong></strong></td>
                         <td colspan="4"><strong></strong></td>
                         <td colspan="1"><strong></strong></td>
-                        
+
                     </tr> <tr>
                     <td colspan="1"><strong></strong></td>
                         <td colspan="5"><strong></strong></td>
@@ -312,7 +312,7 @@
                         <td colspan="5"><strong></strong></td>
                         <td colspan="4"><strong></strong></td>
                         <td colspan="1"><strong></strong></td>
-                        
+
                     </tr> <tr>
                     <td colspan="1"><strong></strong></td>
                         <td colspan="5"><strong></strong></td>
@@ -322,7 +322,7 @@
                         <td colspan="5"><strong></strong></td>
                         <td colspan="4"><strong></strong></td>
                         <td colspan="1"><strong></strong></td>
-                        
+
                     </tr> <tr>
                     <td colspan="1"><strong></strong></td>
                         <td colspan="5"><strong></strong></td>
@@ -332,7 +332,7 @@
                         <td colspan="5"><strong></strong></td>
                         <td colspan="4"><strong></strong></td>
                         <td colspan="1"><strong></strong></td>
-                        
-                    </tr> 
+
+                    </tr>
 </body>
 </html>

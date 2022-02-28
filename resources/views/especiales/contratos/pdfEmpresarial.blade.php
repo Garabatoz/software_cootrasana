@@ -35,9 +35,9 @@
             <br>
             CONTRATO Nº <strong>{{$contrato->consecutivo}}</strong>
             <br><br>
-            Entre los suscritos a saber: <strong>COOPERATIVA DE TRANSPORTADORES SAN ANTONIO COOTRASANA,</strong> obrando en calidad de transportadora u operador de Servicio de Transportes Especiales habilitada por el ministerio de transporte bajo Resolución 013 de 16 de febrero de 2016 para la prestación de servicios de transporte de pasajeros en la modalidad de especial, representada legalmente por  <strong>JOSÉ JAVIER CASTAÑO GIRALDO. Identificado con Cédula de Ciudadanía 70.084.127, mayor de edad</strong> y con domicilio en Medellín, quien manifiesta que no está incurso en ninguna causal de inhabilidad o incompatibilidad para contratar y para efectos del contrato se denominará  <strong>EL OPERADOR. </strong><br><br>
+            Entre los suscritos a saber: <strong>COOPERATIVA DE TRANSPORTADORES SAN ANTONIO COOTRASANA,</strong> obrando en calidad de transportadora u operador de Servicio de Transportes Especiales habilitada por el ministerio de transporte bajo Resolución 013 de 16 de febrero de 2016 para la prestación de servicios de transporte de pasajeros en la modalidad de especial, representada legalmente por  <strong>GUSTAVO ALVEIRO JARAMILLO FRANCO</strong> identificado como aparece al pie de su firma, mayor de edad y con domicilio en Medellín, quien manifiesta que no está incurso en ninguna causal de inhabilidad o incompatibilidad para contratar y para efectos del contrato se denominará  <strong>EL OPERADOR. </strong><br><br>
 
-            Y  <strong>GUSTAVO ELIAS GUTIERREZ VILLA identificado(a) como Aparece al pie de su firma, mayor de edad y con Cédula de Ciudadanía número 70.565.371,</strong> obrando en calidad de Representante Legal de <strong>ESTACO S.A.</strong> con NIT.<strong>890916766-4</strong> Contratante del servicio de Transporte Turístico con <strong>RNT73487,</strong> hemos convenido celebrar el presente contrato de prestación de Servicios de Transporte Especial que se especifica a continuación para dar cumplimiento a los Artículos 12 y 13 del DECRETO 348 de 2015. Y que se regirá por las normas civiles y comerciales y demás disposiciones concordantes y complementarias y en lo no regulado como aparece en las siguientes clausulas:
+            Y  <strong>{{$contrato->nombre}} {{$contrato->apellido}} identificado(a) como Aparece al pie de su firma, mayor de edad y con Cédula de Ciudadanía número {{$contrato->cedula}},</strong> obrando en calidad de Representante Legal de <strong>{{$contrato->nombre}} {{$contrato->apellido}}</strong> con NIT.<strong>{{$contrato->cedula}}</strong> Contratante del servicio de Transporte Turístico con <strong>RNT73487,</strong> hemos convenido celebrar el presente contrato de prestación de Servicios de Transporte Especial que se especifica a continuación para dar cumplimiento a los Artículos 12 y 13 del DECRETO 348 de 2015. Y que se regirá por las normas civiles y comerciales y demás disposiciones concordantes y complementarias y en lo no regulado como aparece en las siguientes clausulas:
                 <br><br>
 
                 <div class="tipo"><strong>PRIMERO</strong></div>
@@ -51,16 +51,16 @@
 
 <tr>
   <td scope="row">Nombre de la empresa:</td>
-  <td>{{$contrato->nombre}}</td>
+  <td>{{$contrato->nombre}} {{$contrato->apellido}}</td>
   <td>NIT:</td>
   <td>{{$contrato->cedula}}</td>
 </tr>
 
 <tr>
   <td>Representante legal:</td>
-  <td>{{$contrato->nombreResponsable}}</td>
+  <td>{{$contrato->nombre}} {{$contrato->apellido}}</td>
   <td>CC:</td>
-  <td>{{$contrato->cedulaResponsable}}</td>
+  <td>{{$contrato->cedula}}</td>
 </tr>
 
 <tr>
@@ -120,13 +120,6 @@
 <tr>
   <td>{{$contrato->municipio}}</td>
   <td>{{$contrato->direccion}}	</td>
-  <td>{{$contrato->municipio}}</td>
-  <td>{{$contrato->direccion}}</td>
-</tr>
-
-<tr>
-  <td>{{$contrato->municipio}}</td>
-  <td>{{$contrato->direccion}}</td>
   <td>{{$contrato->municipio}}</td>
   <td>{{$contrato->direccion}}</td>
 </tr>
@@ -389,7 +382,7 @@ E)	Derecho a acceder a sus datos personales.
 <br>
 
 <strong> TITULO EJECUTIVO: </strong>El presente contrato de transporte presta mérito ejecutivo, por contener una obligación clara, expresa, exigible y constituye en todas sus partes y anexos (certificados de existencia y representación legal de las partes, pagaré, carta de instrucciones,  facturas y los  Anexos N° 1 “Relación de personas a transportar y  Anexo N° 2 “Plan de rodamiento”. Plena prueba contra el deudor según el artículo 488 del código de Procedimiento Civil.
-Para constancia y aceptación, se firma por las partes en Guarne, el día ______ del mes 10 del año 2019, en dos ejemplares del mismo valor, con destino cada uno de ellos a cada una de las partes.<br><br>
+Para constancia y aceptación, se firma por las partes en _____________, el día ______ del mes ____ del año _______, en dos ejemplares del mismo valor, con destino cada uno de ellos a cada una de las partes.<br><br>
 <div class="page-break"></div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 <table>
@@ -398,7 +391,7 @@ Para constancia y aceptación, se firma por las partes en Guarne, el día ______
            Representante Legal Cootrasana <br>
            Operador y/o Contratista<br>
       </td>
-      <td> {{$contrato->nombreResponsable}}<br>
+      <td> {{$contrato->nombre}} {{$contrato->apellido}}<br>
       Contratante<br>
       </td>
       </tr>

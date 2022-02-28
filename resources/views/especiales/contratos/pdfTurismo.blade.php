@@ -39,7 +39,7 @@
             Entre los suscritos a saber: <strong>COOPERATIVA DE TRANSPORTADORES SAN ANTONIO COOTRASANA</strong>, obrando en calidad de transportadora u operador de Servicio de Transportes Especiales habilitada por el ministerio de transporte para la prestación de servicios de transporte de pasajeros en la modalidad de especial, representada legalmente por <strong>GUSTAVO ALVEIRO JARAMILLO FRANCO.</strong>
             <br><br>
 
-            Identificado como aparece al pie de su firma, mayor de edad y con domicilio en Medellín, quien manifiesta que no está incurso en ninguna causal de inhabilidad o incompatibilidad para contratar y para efectos del contrato se denominará <strong>EL OPERADOR Y <strong>{{$contrato->nombreResponsable}}</strong> identificado(a) como Aparece al pie de su firma, mayor de edad y con Cédula de Ciudadanía número </strong><strong>{{$contrato->cedula}}</strong>, obrando en calidad de Representante Legal de {{$contrato->nombre}} con NIT. {{$contrato->cedula}}Contratante del servicio de Transporte Turístico con _____________, hemos convenido celebrar el presente contrato de prestación de Servicios de Transporte Especial que se especifica a continuación para dar cumplimiento a los Artículos 12 y 13 del DECRETO 348 de 2015. Y que se regirá por las normas civiles y comerciales y demás disposiciones concordantes y complementarias y en lo no regulado como aparece en las siguientes clausulas:
+            Identificado como aparece al pie de su firma, mayor de edad y con domicilio en Medellín, quien manifiesta que no está incurso en ninguna causal de inhabilidad o incompatibilidad para contratar y para efectos del contrato se denominará <strong>EL OPERADOR Y <strong>{{$contrato->nombreResponsable}}</strong> identificado(a) como Aparece al pie de su firma, mayor de edad y con Cédula de Ciudadanía número </strong><strong>{{$contrato->cedula}}</strong>, obrando en calidad de Representante Legal de {{$contrato->nombre}} {{$contrato->apellido}} con NIT. {{$contrato->cedula}} Contratante del servicio de Transporte Turístico con COOTRASANA, hemos convenido celebrar el presente contrato de prestación de Servicios de Transporte Especial que se especifica a continuación para dar cumplimiento a los Artículos 12 y 13 del DECRETO 348 de 2015. Y que se regirá por las normas civiles y comerciales y demás disposiciones concordantes y complementarias y en lo no regulado como aparece en las siguientes clausulas:
 
             <br><br>
             <strong>PRIMERA. OBJETO:</strong> El operador se obliga con el contratante a transportar a los usuarios asignados por éste entre el lugar especificado por el CONTRATANTE, en el caso de que el servicio se preste, de la siguiente manera:
@@ -62,7 +62,8 @@
             </tbody>
 
                     <br><br>
-                    NOMBRE DE GUÍA DE TURISMO (RESPONSABLE DEL SERVICIO):______________________________________________ CC: ____________________
+                    NOMBRE DE GUÍA DE TURISMO (RESPONSABLE DEL SERVICIO):
+                    <br> <strong>{{$contrato->nombreResponsable}} CC: {{$contrato->cedulaResponsable}}</strong>
                     <br><br>
 
                     <strong>SEGUNDA. DURACIÓN Y PRÓRROGAS DEL CONTRATO: </strong>el tiempo de duración de este contrato es el definido entre la fecha inicial y final.
@@ -173,7 +174,7 @@
 
             <strong>DECIMA SEXTA. TITULO EJECUTIVO: </strong> El presente contrato de trasporte, presta mérito ejecutivo, por contener una obligación clara, expresa y exigible y constituye en todas sus partes y anexos (pagaré, carta de instrucciones y facturas), plena prueba contra el deudor según el artículo 488 del código de Procedimiento Civil. La transportadora no tiene ninguna relación laboral con el/la guía de turismo que va en el vehículo.
 
-            Para constancia y aceptación, se firma por las partes en Medellín, el día ______ del mes 08 del año 2019, en dos ejemplares del mismo valor, con destino cada uno de ellos a cada una de las partes.
+            Para constancia y aceptación, se firma por las partes en Medellín, el día ______ del mes ____ del año _____, en dos ejemplares del mismo valor, con destino cada uno de ellos a cada una de las partes.
 
                     </div><br><br>
 <div class="page-break"></div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
